@@ -1,0 +1,17 @@
+{
+  "kind": "tasteplot-llm-transcript",
+  "version": 1,
+  "provider": "illustrative",
+  "recordedAt": "2026-10-05T00:00:00Z",
+  "source": "illustrative-fixture",
+  "note": "ILLUSTRATIVE FIXTURE, not a measurement. Hand-written to show the failure modes that LLM-only site recommendations typically have (invented businesses, real businesses in the wrong neighbourhood, neighbourhoods that do not fit the audience). Invented business names are fictional on purpose. Replace it with real model output by running `npm run eval -- --live --record --confirm-spend` once LLM spend is approved.",
+  "request": {
+    "brand": "Folio & Fern Books",
+    "metro": "lon",
+    "sites": 3
+  },
+  "turns": [],
+  "completions": [
+    "Here are my recommendations:\n```json\n{\n  \"sites\": [\n    {\n      \"neighborhood\": \"Marylebone\",\n      \"anchors\": [\n        \"Daunt Books Marylebone\",\n        \"Monmouth Coffee\"\n      ],\n      \"reason\": \"Book lovers and cafe culture.\"\n    },\n    {\n      \"neighborhood\": \"Shoreditch\",\n      \"anchors\": [\n        \"Rough Trade East\",\n        \"Brick Lane Book Exchange\"\n      ],\n      \"reason\": \"Young creative readers.\"\n    },\n    {\n      \"neighborhood\": \"Notting Hill\",\n      \"anchors\": [\n        \"Portobello Paper House\",\n        \"Ledbury Reading Rooms\"\n      ],\n      \"reason\": \"Affluent and literary.\"\n    }\n  ]\n}\n```"
+  ]
+}

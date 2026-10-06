@@ -1,0 +1,85 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:demographics",
+   "signal.interests.entities": "DB4CE34E-3A63-4947-946F-9D52502C5762,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+   "signal.interests.tags": "urn:tag:genre:media:outdoors,urn:tag:genre:media:cycling"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "demographics": [
+    {
+     "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+     "query": {
+      "age": {
+       "24_and_younger": -0.01,
+       "25_to_29": -0.09,
+       "30_to_34": -0.71,
+       "35_to_44": 0.07,
+       "45_to_54": 0.1,
+       "55_and_older": 0.01
+      },
+      "gender": {
+       "male": 0.12,
+       "female": -0.12
+      }
+     }
+    },
+    {
+     "entity_id": "urn:tag:genre:media:cycling",
+     "query": {
+      "age": {
+       "24_and_younger": -0.64,
+       "25_to_29": -0.58,
+       "30_to_34": -0.61,
+       "35_to_44": -0.63,
+       "45_to_54": 0.53,
+       "55_and_older": 0.77
+      },
+      "gender": {
+       "male": -0.37,
+       "female": 0.37
+      }
+     }
+    },
+    {
+     "entity_id": "urn:tag:genre:media:outdoors",
+     "query": {
+      "age": {
+       "24_and_younger": -0.59,
+       "25_to_29": -0.59,
+       "30_to_34": -0.66,
+       "35_to_44": -0.6,
+       "45_to_54": 0.54,
+       "55_and_older": 0.77
+      },
+      "gender": {
+       "male": -0.4,
+       "female": 0.4
+      }
+     }
+    },
+    {
+     "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+     "query": {
+      "age": {
+       "24_and_younger": -0.09,
+       "25_to_29": -0.05,
+       "30_to_34": -0.73,
+       "35_to_44": -0.58,
+       "45_to_54": 0.2,
+       "55_and_older": 0.14
+      },
+      "gender": {
+       "male": 0.7000000000000001,
+       "female": -0.7000000000000001
+      }
+     }
+    }
+   ]
+  }
+ }
+}

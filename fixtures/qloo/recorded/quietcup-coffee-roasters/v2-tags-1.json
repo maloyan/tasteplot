@@ -1,0 +1,95 @@
+{
+ "request": {
+  "path": "/v2/tags",
+  "params": {
+   "filter.query": "specialty coffee",
+   "take": "8"
+  }
+ },
+ "body": {
+  "duration": 42,
+  "success": true,
+  "results": {
+   "tags": [
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:specialty_dish:place",
+     "id": "urn:tag:specialty_dish:place:specialty_coffee",
+     "name": "Specialty Coffee",
+     "popularity": 0.9837021,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:menu_highlight:qloo",
+     "id": "urn:tag:menu_highlight:qloo:specialty_coffee",
+     "name": "Specialty Coffee",
+     "popularity": 0.95614016,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:cuisine:qloo",
+     "id": "urn:tag:cuisine:qloo:specialty_coffee",
+     "name": "Specialty Coffee",
+     "popularity": 0.92118454,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:menu_highlight:qloo",
+     "id": "urn:tag:menu_highlight:qloo:specialty_coffees",
+     "name": "Specialty Coffees",
+     "popularity": 0.93568695,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:specialty_dish:place",
+     "id": "urn:tag:specialty_dish:place:specialty_coffees",
+     "name": "Specialty Coffees",
+     "popularity": 0.9144518,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:specialty_dish:place",
+     "id": "urn:tag:specialty_dish:place:specialty_coffee_3_origins_tasting_set",
+     "name": "Specialty Coffee 3 Origins Tasting Set",
+     "popularity": 0.5777895,
+     "properties": {},
+     "tags": []
+    }
+   ]
+  }
+ }
+}

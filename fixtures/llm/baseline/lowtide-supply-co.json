@@ -1,0 +1,17 @@
+{
+  "kind": "tasteplot-llm-transcript",
+  "version": 1,
+  "provider": "illustrative",
+  "recordedAt": "2026-10-05T00:00:00Z",
+  "source": "illustrative-fixture",
+  "note": "ILLUSTRATIVE FIXTURE, not a measurement. Hand-written to show the failure modes that LLM-only site recommendations typically have (invented businesses, real businesses in the wrong neighbourhood, neighbourhoods that do not fit the audience). Invented business names are fictional on purpose. Replace it with real model output by running `npm run eval -- --live --record --confirm-spend` once LLM spend is approved.",
+  "request": {
+    "brand": "Lowtide Supply Co.",
+    "metro": "la",
+    "sites": 3
+  },
+  "turns": [],
+  "completions": [
+    "Here are my recommendations:\n```json\n{\n  \"sites\": [\n    {\n      \"neighborhood\": \"Fairfax\",\n      \"anchors\": [\n        \"Supreme Los Angeles\",\n        \"Melrose Kicks Exchange\"\n      ],\n      \"reason\": \"The streetwear strip.\"\n    },\n    {\n      \"neighborhood\": \"Silver Lake\",\n      \"anchors\": [\n        \"Amoeba Music\",\n        \"Sunset Junction Skate Co.\"\n      ],\n      \"reason\": \"Creative, young and local.\"\n    },\n    {\n      \"neighborhood\": \"Santa Monica\",\n      \"anchors\": [\n        \"Third Street Board Supply\",\n        \"Ocean Avenue Threads\"\n      ],\n      \"reason\": \"Beach and skate culture, tourists.\"\n    }\n  ]\n}\n```"
+  ]
+}

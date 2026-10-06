@@ -1,0 +1,299 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:entity:place",
+   "signal.interests.entities": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3,0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+   "signal.interests.tags": "urn:tag:specialty_dish:place:specialty_coffee,urn:tag:genre:media:cycling,urn:tag:nearby_attraction:qloo:record_stores",
+   "filter.location": "POINT(-87.6341 41.8924)",
+   "filter.location.radius": "1200",
+   "feature.explainability": "true",
+   "take": "6"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "entities": [
+    {
+     "name": "Marina City",
+     "tags": [
+      {
+       "id": "urn:tag:interests:qloo:urban_planning",
+       "name": "Urban planning",
+       "type": "urn:tag:interests:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:setting:qloo:waterfront",
+       "name": "Waterfront",
+       "type": "urn:tag:setting:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:neighborhood_characteristic:qloo:iconic_landmark",
+       "name": "Iconic landmark",
+       "type": "urn:tag:neighborhood_characteristic:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 41.8882994,
+      "lon": -87.6282774,
+      "geohash": "dp3wmcx110dn"
+     },
+     "entity_id": "8C0DAE2E-3DE4-445D-AFE7-6A1E379CD418",
+     "popularity": 0.9959735908868204,
+     "properties": {
+      "address": "300 N State St Chicago, IL 60654",
+      "geocode": {
+       "city": "Chicago",
+       "name": "River North",
+       "metro": "Chicago",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "Illinois",
+       "admin2_region": "Cook County"
+      },
+      "price_level": null,
+      "business_rating": 4.699999809265137,
+      "short_description": "Iconic twin cylindrical towers offering residences with panoramic Chicago River and Lake Michigan views, rooftop amenities, on-site gym, and convenient downtown location."
+     },
+     "disambiguation": "300 N State St Chicago, IL 60654",
+     "query": {
+      "affinity": 0.8070271720613064,
+      "distance": 663.4784613970662,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.3392512610687515
+        },
+        {
+         "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+         "score": 0.3367795810916912
+        },
+        {
+         "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+         "score": 0.3239691578395573
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Andy's Jazz Club & Restaurant",
+     "tags": [
+      {
+       "id": "urn:tag:category:place:night_club",
+       "name": "Night club",
+       "type": "urn:tag:category:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:menu_highlight:qloo:caramel_apple_bread_pudding",
+       "name": "Caramel apple bread pudding",
+       "type": "urn:tag:menu_highlight:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "name": "Wheelchair accessible restroom",
+       "type": "urn:tag:accessibility:place",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 41.889823899999996,
+      "lon": -87.6274114,
+      "geohash": "dp3wmcz9vm4s"
+     },
+     "entity_id": "3EBD3C99-A96A-4FAC-A085-63D735373C0C",
+     "popularity": 0.9934872428634736,
+     "properties": {
+      "address": "11 E Hubbard St Chicago, IL 60611",
+      "geocode": {
+       "city": "Chicago",
+       "name": "River North",
+       "metro": "Chicago",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "Illinois",
+       "admin2_region": "Cook County"
+      },
+      "price_level": 3,
+      "business_rating": 4.5,
+      "short_description": "Intimate downtown supper-club showcasing live jazz with full dinner service, reserved seating, and multiple nightly shows."
+     },
+     "disambiguation": "11 E Hubbard St Chicago, IL 60611",
+     "query": {
+      "affinity": 0.7999771673916802,
+      "distance": 623.364009819655,
+      "measurements": {
+       "audience_growth": -0.4803844614152614
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+         "score": 0.345076301434464
+        },
+        {
+         "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+         "score": 0.3394024899958421
+        },
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.3155212085696939
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Carbide & Carbon Building",
+     "tags": [
+      {
+       "id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+       "name": "Walkable",
+       "type": "urn:tag:neighborhood_characteristic:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:genre:place",
+       "name": "Place",
+       "type": "urn:tag:genre:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:nearby_attraction:qloo:magnificent_mile",
+       "name": "Magnificent mile",
+       "type": "urn:tag:nearby_attraction:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 41.8866526,
+      "lon": -87.62489389999999,
+      "geohash": "dp3wq11x2n0p"
+     },
+     "entity_id": "F46DCDE0-762C-4A85-80D8-BC1DD09B3487",
+     "popularity": 0.9063467529635775,
+     "properties": {
+      "address": "230 N Michigan Ave Chicago, IL 60601",
+      "geocode": {
+       "city": "Chicago",
+       "name": "Loop",
+       "metro": "Chicago",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "Illinois",
+       "admin2_region": "Cook County"
+      },
+      "price_level": null,
+      "business_rating": 4.900000095367432,
+      "short_description": "Landmarked Art Deco skyscraper on Michigan Avenue famed for its dark green terracotta facade and gilded, champagne-bottle–style crown."
+     },
+     "disambiguation": "230 N Michigan Ave Chicago, IL 60601",
+     "query": {
+      "affinity": 0.7996264802933626,
+      "distance": 994.5636447537986,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.34307165025592296
+        },
+        {
+         "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+         "score": 0.3358521673733594
+        },
+        {
+         "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+         "score": 0.32107618237071767
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "query": {
+   "explainability": {
+    "signal.interests.entities": {
+     "effect_on_top3_recs": [
+      {
+       "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+       "avg_score": 0.33923601663317154
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.33261470663145615
+      },
+      {
+       "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+       "avg_score": 0.32814927673537236
+      }
+     ],
+     "effect_on_top5_recs": [
+      {
+       "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+       "avg_score": 0.3381147117822191
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.3367131425526299
+      },
+      {
+       "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+       "avg_score": 0.3251721456651511
+      }
+     ],
+     "effect_on_top10_recs": [
+      {
+       "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+       "avg_score": 0.33749530547699097
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.3338418481942928
+      },
+      {
+       "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+       "avg_score": 0.3286628463287163
+      }
+     ],
+     "effect_on_all_recs": [
+      {
+       "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+       "avg_score": 0.33749530547699097
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.3338418481942928
+      },
+      {
+       "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+       "avg_score": 0.3286628463287163
+      }
+     ]
+    }
+   }
+  }
+ }
+}

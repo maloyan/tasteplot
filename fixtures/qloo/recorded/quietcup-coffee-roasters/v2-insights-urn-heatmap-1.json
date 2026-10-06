@@ -1,0 +1,228 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:heatmap",
+   "signal.interests.entities": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3,0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+   "signal.interests.tags": "urn:tag:specialty_dish:place:specialty_coffee,urn:tag:genre:media:cycling,urn:tag:nearby_attraction:qloo:record_stores",
+   "filter.location.query": "Chicago"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "heatmap": [
+    {
+     "location": {
+      "latitude": 41.883316,
+      "longitude": -87.63313,
+      "geohash": "dp3wmbe"
+     },
+     "query": {
+      "affinity": 1,
+      "affinity_rank": 0.7222775,
+      "popularity": 1,
+      "entity_brand_affinity_rank": 0.97674,
+      "tag_affinity_rank": 0.467815,
+      "entity_brand_affinity": 1,
+      "tag_affinity": 0.9996124031007751
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.883316,
+      "longitude": -87.62352,
+      "geohash": "dp3wq0d"
+     },
+     "query": {
+      "affinity": 0.9996124031007751,
+      "affinity_rank": 0.6936233333333333,
+      "popularity": 0.9996124031007751,
+      "entity_brand_affinity_rank": 0.9762386666666666,
+      "tag_affinity_rank": 0.41100800000000004,
+      "entity_brand_affinity": 0.9996124031007751,
+      "tag_affinity": 0.9992248062015504
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.9767,
+      "longitude": -87.900925,
+      "geohash": "dp3qzc8"
+     },
+     "query": {
+      "affinity": 0.9992248062015504,
+      "affinity_rank": 0.6840978333333334,
+      "popularity": 0.9961240310077519,
+      "entity_brand_affinity_rank": 0.9638366666666668,
+      "tag_affinity_rank": 0.40435899999999997,
+      "entity_brand_affinity": 0.9976744186046511,
+      "tag_affinity": 0.9988372093023256
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.90941,
+      "longitude": -87.675705,
+      "geohash": "dp3wkvk"
+     },
+     "query": {
+      "affinity": 0.9988372093023256,
+      "affinity_rank": 0.6747139838381314,
+      "popularity": 0.986046511627907,
+      "entity_brand_affinity_rank": 0.9541896666666666,
+      "tag_affinity_rank": null,
+      "entity_brand_affinity": 0.9953488372093023,
+      "tag_affinity": null
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.879196,
+      "longitude": -87.63588,
+      "geohash": "dp3wjzc"
+     },
+     "query": {
+      "affinity": 0.9984496124031008,
+      "affinity_rank": 0.6696534166666667,
+      "popularity": 0.998062015503876,
+      "entity_brand_affinity_rank": 0.9656723333333334,
+      "tag_affinity_rank": 0.3736345,
+      "entity_brand_affinity": 0.9984496124031008,
+      "tag_affinity": 0.9984496124031008
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.898422,
+      "longitude": -87.62352,
+      "geohash": "dp3wq56"
+     },
+     "query": {
+      "affinity": 0.998062015503876,
+      "affinity_rank": 0.6669819166666667,
+      "popularity": 0.9988372093023256,
+      "entity_brand_affinity_rank": 0.9679443333333334,
+      "tag_affinity_rank": 0.3660195,
+      "entity_brand_affinity": 0.9992248062015504,
+      "tag_affinity": 0.998062015503876
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.879196,
+      "longitude": -87.62901,
+      "geohash": "dp3wjzy"
+     },
+     "query": {
+      "affinity": 0.9976744186046511,
+      "affinity_rank": 0.6648651648875048,
+      "popularity": 0.9709302325581395,
+      "entity_brand_affinity_rank": 0.9402613333333334,
+      "tag_affinity_rank": null,
+      "entity_brand_affinity": 0.9856589147286822,
+      "tag_affinity": null
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.965714,
+      "longitude": -87.638626,
+      "geohash": "dp3wtxx"
+     },
+     "query": {
+      "affinity": 0.9972868217054264,
+      "affinity_rank": 0.6634115890476457,
+      "popularity": 0.9806201550387597,
+      "entity_brand_affinity_rank": 0.9382056666666667,
+      "tag_affinity_rank": null,
+      "entity_brand_affinity": 0.9848837209302326,
+      "tag_affinity": null
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.920395,
+      "longitude": -87.64961,
+      "geohash": "dp3wmrr"
+     },
+     "query": {
+      "affinity": 0.9968992248062015,
+      "affinity_rank": 0.6579828945862161,
+      "popularity": 0.9875968992248062,
+      "entity_brand_affinity_rank": 0.9305283333333333,
+      "tag_affinity_rank": null,
+      "entity_brand_affinity": 0.9790697674418605,
+      "tag_affinity": null
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.89293,
+      "longitude": -87.61391,
+      "geohash": "dp3wq63"
+     },
+     "query": {
+      "affinity": 0.9965116279069768,
+      "affinity_rank": 0.6539149092740499,
+      "popularity": 0.9468992248062016,
+      "entity_brand_affinity_rank": 0.9247753333333333,
+      "tag_affinity_rank": null,
+      "entity_brand_affinity": 0.9751937984496124,
+      "tag_affinity": null
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.899796,
+      "longitude": -87.68669,
+      "geohash": "dp3wkes"
+     },
+     "query": {
+      "affinity": 0.9961240310077519,
+      "affinity_rank": 0.6520387192813015,
+      "popularity": 0.9755813953488373,
+      "entity_brand_affinity_rank": 0.9221219999999999,
+      "tag_affinity_rank": null,
+      "entity_brand_affinity": 0.974031007751938,
+      "tag_affinity": null
+     }
+    },
+    {
+     "location": {
+      "latitude": 41.795425,
+      "longitude": -87.57683,
+      "geohash": "dp3tz0s"
+     },
+     "query": {
+      "affinity": 0.9957364341085271,
+      "affinity_rank": 0.6483881626722958,
+      "popularity": 0.9372093023255814,
+      "entity_brand_affinity_rank": 0.9169593333333332,
+      "tag_affinity_rank": null,
+      "entity_brand_affinity": 0.9682170542635659,
+      "tag_affinity": null
+     }
+    }
+   ]
+  },
+  "query": {
+   "localities": {
+    "filter": [
+     {
+      "entity_id": "27748652-BB63-461D-9C65-207D06E18716",
+      "name": "Chicago",
+      "subtype": "urn:entity:locality",
+      "location": {
+       "lat": 41.838192854154656,
+       "lon": -87.6857004444166
+      },
+      "popularity": 0.9995835,
+      "disambiguation": "Chicago, Cook County, Illinois, United States"
+     }
+    ]
+   }
+  },
+  "_curated_note": "first 12 of 2581 cells"
+ }
+}

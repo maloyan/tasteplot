@@ -1,0 +1,87 @@
+{
+ "request": {
+  "path": "/search",
+  "params": {
+   "query": "Patagonia",
+   "types": "urn:entity:brand,urn:entity:artist,urn:entity:author,urn:entity:person,urn:entity:book,urn:entity:movie,urn:entity:tv_show,urn:entity:podcast,urn:entity:album,urn:entity:videogame,urn:entity:locality,urn:entity:destination",
+   "take": "8"
+  }
+ },
+ "body": {
+  "results": [
+   {
+    "name": "Patagonia",
+    "entity_id": "7D458250-9644-4B52-AFFC-02271FFFC725",
+    "types": [
+     "urn:entity:locality"
+    ],
+    "properties": {},
+    "popularity": 0.9995050734949251,
+    "disambiguation": "Patagonia, Departamento Río Senguer, Chubut, Argentina",
+    "location": {
+     "lat": -45.31852271944166,
+     "lon": -70.1586523512339
+    },
+    "tags": [
+     {
+      "name": "Region",
+      "tag_id": "urn:tag:genre:locality:region",
+      "type": "urn:tag:genre:locality",
+      "value": "urn:tag:genre:locality:region"
+     }
+    ]
+   },
+   {
+    "name": "Patagonia",
+    "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "properties": {
+     "short_description": "Patagonia is an outdoor apparel company known for sustainable clothing and gear for activities like climbing, surfing, skiing, and trail running."
+    },
+    "popularity": 0.995923106914614,
+    "disambiguation": "",
+    "tags": [
+     {
+      "name": "Casual",
+      "tag_id": "urn:tag:genre:brand:fashion:casual",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "name": "Fashion",
+      "tag_id": "urn:tag:genre:brand:fashion",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "name": "Athletic",
+      "tag_id": "urn:tag:genre:brand:fashion:athletic",
+      "type": "urn:tag:genre:brand"
+     }
+    ]
+   },
+   {
+    "name": "Patagônia",
+    "entity_id": "EE26CAD0-7B13-436F-8DFB-10AD5DDECC44",
+    "types": [
+     "urn:entity:locality"
+    ],
+    "properties": {},
+    "popularity": 0.9293450893325733,
+    "disambiguation": "Patagônia, Vitória da Conquista, Bahia, Região Nordeste, Brasil",
+    "location": {
+     "lat": -14.879073886149337,
+     "lon": -40.86278386948468
+    },
+    "tags": [
+     {
+      "name": "Suburb",
+      "tag_id": "urn:tag:genre:locality:suburb",
+      "type": "urn:tag:genre:locality",
+      "value": "urn:tag:genre:locality:suburb"
+     }
+    ]
+   }
+  ]
+ }
+}

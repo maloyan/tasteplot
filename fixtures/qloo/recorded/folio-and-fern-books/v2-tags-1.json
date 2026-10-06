@@ -1,0 +1,185 @@
+{
+ "request": {
+  "path": "/v2/tags",
+  "params": {
+   "filter.query": "literary fiction",
+   "take": "8"
+  }
+ },
+ "body": {
+  "duration": 21,
+  "success": true,
+  "results": {
+   "tags": [
+    {
+     "parents": [
+      {
+       "type": "urn:entity:book"
+      },
+      {
+       "type": "urn:entity:author"
+      }
+     ],
+     "type": "urn:tag:genre:media",
+     "id": "urn:tag:genre:media:literary_fiction",
+     "name": "Literary fiction",
+     "popularity": 0.999919,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:tv_show"
+      },
+      {
+       "type": "urn:entity:podcast"
+      },
+      {
+       "type": "urn:entity:writer"
+      },
+      {
+       "type": "urn:entity:director"
+      },
+      {
+       "type": "urn:entity:tv_episode"
+      },
+      {
+       "type": "urn:entity:book"
+      },
+      {
+       "type": "urn:entity:author"
+      },
+      {
+       "type": "urn:entity:podcaster"
+      },
+      {
+       "type": "urn:entity:actor"
+      },
+      {
+       "type": "urn:entity:movie"
+      }
+     ],
+     "type": "urn:tag:genre:media",
+     "id": "urn:tag:genre:media:fiction",
+     "name": "Fiction",
+     "popularity": 0.99999416,
+     "properties": {},
+     "tags": [
+      {
+       "name": "Canonical",
+       "tag_id": "urn:tag:collection:canonical",
+       "type": "urn:tag:collection",
+       "value": "urn:tag:collection:canonical"
+      }
+     ]
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:book"
+      },
+      {
+       "type": "urn:entity:author"
+      }
+     ],
+     "type": "urn:tag:genre:media",
+     "id": "urn:tag:genre:media:historical_fiction",
+     "name": "Historical fiction",
+     "popularity": 0.9999765,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:tv_show"
+      },
+      {
+       "type": "urn:entity:podcast"
+      },
+      {
+       "type": "urn:entity:writer"
+      },
+      {
+       "type": "urn:entity:director"
+      },
+      {
+       "type": "urn:entity:tv_episode"
+      },
+      {
+       "type": "urn:entity:book"
+      },
+      {
+       "type": "urn:entity:author"
+      },
+      {
+       "type": "urn:entity:podcaster"
+      },
+      {
+       "type": "urn:entity:actor"
+      },
+      {
+       "type": "urn:entity:movie"
+      }
+     ],
+     "type": "urn:tag:genre:media",
+     "id": "urn:tag:genre:media:science_fiction",
+     "name": "Science Fiction",
+     "popularity": 0.9999526,
+     "properties": {
+      "description": "Science fiction is a genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, futuristic technologies, and intergalactic adventuring.",
+      "history": "became popular in cinema in the 20th century, especially with films like '2001: A Space Odyssey' and 'Star Wars'"
+     },
+     "tags": [
+      {
+       "name": "Canonical",
+       "tag_id": "urn:tag:collection:canonical",
+       "type": "urn:tag:collection",
+       "value": "urn:tag:collection:canonical"
+      }
+     ]
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:book"
+      },
+      {
+       "type": "urn:entity:author"
+      }
+     ],
+     "type": "urn:tag:genre:media",
+     "id": "urn:tag:genre:media:non_fiction",
+     "name": "Non fiction",
+     "popularity": 0.9999082,
+     "properties": {},
+     "tags": [
+      {
+       "name": "Canonical",
+       "tag_id": "urn:tag:collection:canonical",
+       "type": "urn:tag:collection",
+       "value": "urn:tag:collection:canonical"
+      }
+     ]
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:book"
+      },
+      {
+       "type": "urn:entity:author"
+      }
+     ],
+     "type": "urn:tag:genre:media",
+     "id": "urn:tag:genre:media:science_fiction_fantasy",
+     "name": "Science fiction fantasy",
+     "popularity": 0.9999033,
+     "properties": {},
+     "tags": []
+    }
+   ]
+  }
+ }
+}

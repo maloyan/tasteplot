@@ -1,0 +1,271 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:entity:place",
+   "signal.interests.entities": "DB4CE34E-3A63-4947-946F-9D52502C5762,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+   "signal.interests.tags": "urn:tag:genre:media:outdoors,urn:tag:genre:media:cycling",
+   "filter.location": "POINT(-87.6341 41.8924)",
+   "filter.location.radius": "1200",
+   "feature.explainability": "true",
+   "take": "6"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "entities": [
+    {
+     "name": "The Penthouse at Grand Plaza",
+     "tags": [
+      {
+       "id": "urn:tag:neighborhood_characteristic:qloo:central",
+       "name": "Central",
+       "type": "urn:tag:neighborhood_characteristic:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:decor:qloo:upscale",
+       "name": "Upscale",
+       "type": "urn:tag:decor:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:ambience:qloo:quiet",
+       "name": "Quiet",
+       "type": "urn:tag:ambience:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 41.8920825,
+      "lon": -87.62833309999999,
+      "geohash": "dp3wmfnzpf4k"
+     },
+     "entity_id": "CB532517-D426-4537-B043-EAC45F31E9EE",
+     "popularity": 0.14107568772494047,
+     "properties": {
+      "address": "540 N State St Chicago, IL 60654",
+      "geocode": {
+       "city": "Chicago",
+       "name": "River North",
+       "metro": "Chicago",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "Illinois",
+       "admin2_region": "Cook County"
+      },
+      "price_level": null,
+      "business_rating": 3.299999952316284,
+      "short_description": "Luxury penthouses with scenic city and lake views, upscale amenities, and a prime location near Chicago's Magnificent Mile and River North District."
+     },
+     "disambiguation": "540 N State St Chicago, IL 60654",
+     "query": {
+      "affinity": 0.8724795227518894,
+      "distance": 478.6522082327971,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+         "score": 0.50393049023964
+        },
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.4960695097603601
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "CloudBar at 360 CHICAGO",
+     "tags": [
+      {
+       "id": "urn:tag:beverage_offering:qloo:specialty_cocktails",
+       "name": "Specialty cocktails",
+       "type": "urn:tag:beverage_offering:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:service_type:qloo:bar_service",
+       "name": "Bar service",
+       "type": "urn:tag:service_type:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:time_of_day_fit:qloo:all_day",
+       "name": "All day",
+       "type": "urn:tag:time_of_day_fit:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 41.898883,
+      "lon": -87.62315029999999,
+      "geohash": "dp3wq56y8w11"
+     },
+     "entity_id": "EA4DB65A-02F4-4E9E-A5ED-F5C3F2615060",
+     "popularity": 0.24513177625950883,
+     "properties": {
+      "address": "875 N Michigan Ave 94th floor Chicago, IL 60611",
+      "geocode": {
+       "city": "Chicago",
+       "name": "Streeterville",
+       "metro": "Chicago",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "Illinois",
+       "admin2_region": "Cook County"
+      },
+      "price_level": 3,
+      "business_rating": 4.300000190734863,
+      "short_description": "Fashionable 94th-floor bar serving craft cocktails, local beers and snacks with panoramic Chicago skyline views and a lively nighttime atmosphere."
+     },
+     "disambiguation": "875 N Michigan Ave 94th floor Chicago, IL 60611",
+     "query": {
+      "affinity": 0.8705850999029917,
+      "distance": 1158.0350300966315,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+         "score": 0.5169375884554722
+        },
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.48306241154452784
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "RiNo Bar",
+     "tags": [
+      {
+       "id": "urn:tag:offerings:place:beer",
+       "name": "Beer",
+       "type": "urn:tag:offerings:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:event:place:birthday",
+       "name": "Birthday",
+       "type": "urn:tag:event:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:beverage_offering:qloo:wine",
+       "name": "Wine",
+       "type": "urn:tag:beverage_offering:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 41.8937696,
+      "lon": -87.6313792,
+      "geohash": "dp3wmfsbbukq"
+     },
+     "entity_id": "790E602B-2B2C-48F6-AD8C-8133D872C06A",
+     "popularity": 0.26865522504541994,
+     "properties": {
+      "address": "642 N Clark St Chicago, IL 60654",
+      "geocode": {
+       "city": "Chicago",
+       "name": "River North",
+       "metro": "Chicago",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "Illinois",
+       "admin2_region": "Cook County"
+      },
+      "price_level": 3,
+      "business_rating": 2.9000000953674316,
+      "short_description": "Late-night River North bar and dance venue with pulsating beats, mesmerizing lights, and mixed-genre DJ nights including country remixes and 2000s pop."
+     },
+     "disambiguation": "642 N Clark St Chicago, IL 60654",
+     "query": {
+      "affinity": 0.8672587315345687,
+      "distance": 271.86719374420164,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+         "score": 0.5225099964453734
+        },
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.4774900035546265
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "query": {
+   "explainability": {
+    "signal.interests.entities": {
+     "effect_on_top3_recs": [
+      {
+       "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+       "avg_score": 0.5144593583801619
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.4855406416198382
+      }
+     ],
+     "effect_on_top5_recs": [
+      {
+       "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+       "avg_score": 0.5080699191976449
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.4919300808023552
+      }
+     ],
+     "effect_on_top10_recs": [
+      {
+       "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+       "avg_score": 0.5090661590553083
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.4909338409446917
+      }
+     ],
+     "effect_on_all_recs": [
+      {
+       "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+       "avg_score": 0.5090661590553083
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.4909338409446917
+      }
+     ]
+    }
+   }
+  }
+ }
+}

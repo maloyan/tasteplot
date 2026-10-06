@@ -1,0 +1,251 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:entity:brand",
+   "signal.interests.entities": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3,0044C2D6-C96D-4571-8EFE-E81E8CF722D4,8C0DAE2E-3DE4-445D-AFE7-6A1E379CD418",
+   "signal.interests.tags": "urn:tag:specialty_dish:place:specialty_coffee,urn:tag:genre:media:cycling,urn:tag:nearby_attraction:qloo:record_stores",
+   "signal.location": "POINT(-87.6341 41.8924)",
+   "signal.location.radius": "1200",
+   "filter.exclude.entities": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3,0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+   "feature.explainability": "true",
+   "take": "3"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "entities": [
+    {
+     "name": "Timbuk2",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion:accessories",
+       "name": "Accessories",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion:accessories:bags_and_leather",
+       "name": "Bags & Leather",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "2F1CAEDE-F8F0-404A-842B-FE6517ECD260",
+     "popularity": 0.8389245817158549,
+     "properties": {
+      "short_description": "Timbuk2 is a brand known for durable and customizable messenger bags, backpacks, travel luggage, and sling bags, often with lifetime warranties."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9086586819896177,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.3400704751378129
+        },
+        {
+         "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+         "score": 0.3301602048812579
+        },
+        {
+         "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+         "score": 0.3297693199809292
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Patagonia",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion:casual",
+       "name": "Casual",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion:athletic",
+       "name": "Athletic",
+       "type": "urn:tag:genre:brand"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+     "popularity": 0.995923106914614,
+     "properties": {
+      "short_description": "Patagonia is an outdoor apparel company known for sustainable clothing and gear for activities like climbing, surfing, skiing, and trail running."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9039900603869347,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.3482503009911558
+        },
+        {
+         "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+         "score": 0.3294507137846241
+        },
+        {
+         "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+         "score": 0.3222989852242201
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Verve Coffee Roasters",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:food_and_beverage",
+       "name": "Food & Beverage",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:food_and_beverage:drinks",
+       "name": "Drinks",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:food_and_beverage:drinks:coffee_and_tea",
+       "name": "Coffee & Tea",
+       "type": "urn:tag:genre:brand"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "371E7897-B3B4-403A-B5BE-9CBF231A8979",
+     "popularity": 0.8623349324473225,
+     "properties": {
+      "short_description": "Verve Coffee Roasters is a specialty coffee brand known for its fresh roasted coffee, including instant coffee sachets and various blends, roasted daily in California."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9023768385801519,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+         "score": 0.38117694881864705
+        },
+        {
+         "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+         "score": 0.31341625158900027
+        },
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.3054067995923527
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "type": "not_found",
+    "signal.interests.entities": [
+     "8C0DAE2E-3DE4-445D-AFE7-6A1E379CD418"
+    ]
+   }
+  ],
+  "query": {
+   "geospatial": {
+    "panel_size": {
+     "context": 72776032816,
+     "target": 3067383953
+    }
+   },
+   "explainability": {
+    "signal.interests.entities": {
+     "effect_on_top3_recs": [
+      {
+       "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+       "avg_score": 0.34441508467459875
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.33124252524044046
+      },
+      {
+       "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+       "avg_score": 0.32434239008496074
+      }
+     ],
+     "effect_on_top5_recs": [
+      {
+       "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+       "avg_score": 0.34441508467459875
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.33124252524044046
+      },
+      {
+       "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+       "avg_score": 0.32434239008496074
+      }
+     ],
+     "effect_on_top10_recs": [
+      {
+       "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+       "avg_score": 0.34441508467459875
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.33124252524044046
+      },
+      {
+       "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+       "avg_score": 0.32434239008496074
+      }
+     ],
+     "effect_on_all_recs": [
+      {
+       "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+       "avg_score": 0.34441508467459875
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.33124252524044046
+      },
+      {
+       "entity_id": "0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+       "avg_score": 0.32434239008496074
+      }
+     ]
+    }
+   }
+  }
+ }
+}

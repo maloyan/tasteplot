@@ -1,0 +1,107 @@
+{
+ "request": {
+  "path": "/search",
+  "params": {
+   "query": "Rapha",
+   "types": "urn:entity:brand,urn:entity:artist,urn:entity:author,urn:entity:person,urn:entity:book,urn:entity:movie,urn:entity:tv_show,urn:entity:podcast,urn:entity:album,urn:entity:videogame,urn:entity:locality,urn:entity:destination",
+   "take": "8"
+  }
+ },
+ "body": {
+  "results": [
+   {
+    "name": "RAPHA",
+    "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "properties": {
+     "short_description": "Rapha is a premium brand specializing in high-performance cycling clothing and accessories designed for comfort, style, and durability."
+    },
+    "popularity": 0.9709362445118747,
+    "disambiguation": "",
+    "tags": [
+     {
+      "name": "Fashion",
+      "tag_id": "urn:tag:genre:brand:fashion",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "name": "Minimalist Design",
+      "tag_id": "urn:tag:aesthetic_property:qloo:minimalist_design",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "name": "Technical Fabrics",
+      "tag_id": "urn:tag:aesthetic_property:qloo:technical_fabrics",
+      "type": "urn:tag:aesthetic_property:qloo"
+     }
+    ]
+   },
+   {
+    "name": "Rapha",
+    "entity_id": "D22FCA9D-B924-4CF9-AADA-F26109597671",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "properties": {
+     "short_description": "Rapha is a hip hop artist known for his lyrical skills and flow."
+    },
+    "popularity": 0.7946162591806647,
+    "disambiguation": "Rapha",
+    "tags": [
+     {
+      "name": "Trance",
+      "tag_id": "urn:tag:genre:trance",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:trance"
+     },
+     {
+      "name": "Electronic",
+      "tag_id": "urn:tag:genre:electronic",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:electronic"
+     },
+     {
+      "name": "Electronica",
+      "tag_id": "urn:tag:genre:electronica",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:electronica"
+     }
+    ]
+   },
+   {
+    "name": "Raphaël Varane",
+    "entity_id": "9AAF2287-EB61-4B77-A15F-F1607F5BF680",
+    "types": [
+     "urn:entity:person"
+    ],
+    "properties": {
+     "short_description": "French association football player"
+    },
+    "popularity": 0.9979887150607191,
+    "disambiguation": "1993-04-25",
+    "tags": [
+     {
+      "name": "Como 1907 Players",
+      "tag_id": "urn:tag:wikipedia_category:wikidata:como_1907_players",
+      "type": "urn:tag:wikipedia_category:wikidata",
+      "value": "urn:tag:wikipedia_category:wikidata:como_1907_players"
+     },
+     {
+      "name": "French Expatriate Sportspeople In Italy",
+      "tag_id": "urn:tag:wikipedia_category:wikidata:french_expatriate_sportspeople_in_italy",
+      "type": "urn:tag:wikipedia_category:wikidata",
+      "value": "urn:tag:wikipedia_category:wikidata:french_expatriate_sportspeople_in_italy"
+     },
+     {
+      "name": "French Expatriate Sportspeople In Spain",
+      "tag_id": "urn:tag:wikipedia_category:wikidata:french_expatriate_sportspeople_in_spain",
+      "type": "urn:tag:wikipedia_category:wikidata",
+      "value": "urn:tag:wikipedia_category:wikidata:french_expatriate_sportspeople_in_spain"
+     }
+    ]
+   }
+  ]
+ }
+}

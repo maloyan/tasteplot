@@ -1,0 +1,105 @@
+{
+ "request": {
+  "path": "/search",
+  "params": {
+   "query": "The Paris Review",
+   "types": "urn:entity:brand,urn:entity:artist,urn:entity:author,urn:entity:person,urn:entity:book,urn:entity:movie,urn:entity:tv_show,urn:entity:podcast,urn:entity:album,urn:entity:videogame,urn:entity:locality,urn:entity:destination",
+   "take": "8"
+  }
+ },
+ "body": {
+  "results": [
+   {
+    "name": "The Paris Review",
+    "entity_id": "78736922-3194-4170-A687-29D5F4DF9667",
+    "types": [
+     "urn:entity:author"
+    ],
+    "properties": {},
+    "popularity": 0.9184955895583353,
+    "disambiguation": "The Paris Review",
+    "tags": [
+     {
+      "name": "Diary:journal",
+      "tag_id": "urn:tag:genre:diary_journal",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:diary_journal"
+     },
+     {
+      "name": "Adventure",
+      "tag_id": "urn:tag:genre:adventure",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:adventure"
+     },
+     {
+      "name": "Theatre",
+      "tag_id": "urn:tag:genre:theatre",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:theatre"
+     }
+    ]
+   },
+   {
+    "name": "The Paris Review",
+    "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "properties": {
+     "short_description": "A quarterly literary magazine founded in 1953 that promotes contemporary writers and supports inquisitive readers worldwide."
+    },
+    "popularity": 0.8781763319828448,
+    "disambiguation": "",
+    "tags": [
+     {
+      "name": "Entertainment",
+      "tag_id": "urn:tag:genre:brand:entertainment",
+      "type": "urn:tag:genre:brand"
+     },
+     {
+      "name": "Minimalist Typography",
+      "tag_id": "urn:tag:aesthetic_property:qloo:minimalist_typography",
+      "type": "urn:tag:aesthetic_property:qloo"
+     },
+     {
+      "name": "Classic Serif Typefaces",
+      "tag_id": "urn:tag:aesthetic_property:qloo:classic_serif_typefaces",
+      "type": "urn:tag:aesthetic_property:qloo"
+     }
+    ]
+   },
+   {
+    "name": "The Paris Review",
+    "entity_id": "3BD7FEF0-C22C-41A7-B6EC-FC2E2CA3DF92",
+    "types": [
+     "urn:entity:podcast"
+    ],
+    "properties": {
+     "short_description": "Intimate conversations and performances featuring renowned authors and poets, showcasing the best of America's literary heritage."
+    },
+    "popularity": 0.7516918582118475,
+    "disambiguation": "",
+    "tags": [
+     {
+      "name": "Arts",
+      "tag_id": "urn:tag:genre:media:arts",
+      "type": "urn:tag:genre:media",
+      "value": "urn:tag:genre:media:arts"
+     },
+     {
+      "name": "Podcasts",
+      "tag_id": "urn:tag:genre:media:podcasts",
+      "type": "urn:tag:genre:media",
+      "value": "urn:tag:genre:media:podcasts"
+     },
+     {
+      "name": "Books",
+      "tag_id": "urn:tag:genre:media:books",
+      "type": "urn:tag:genre:media",
+      "value": "urn:tag:genre:media:books"
+     }
+    ]
+   }
+  ]
+ }
+}

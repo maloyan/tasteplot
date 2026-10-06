@@ -1,0 +1,32 @@
+[
+ {
+  "id": "1fd48222",
+  "brand": "Quietcup Coffee Roasters",
+  "metro": "chi",
+  "plan": true
+ },
+ {
+  "id": "d6ff536f",
+  "brand": "Lowtide Supply Co.",
+  "metro": "la",
+  "plan": true
+ },
+ {
+  "id": "9d29b1ce",
+  "brand": "Folio & Fern Books",
+  "metro": "lon",
+  "plan": true
+ },
+ {
+  "id": "504c9b71",
+  "brand": "Switchback Outfitters",
+  "metro": "chi",
+  "plan": false
+ },
+ {
+  "id": "4ebc2179",
+  "brand": "Switchback Outfitters",
+  "metro": "chi",
+  "plan": true
+ }
+]

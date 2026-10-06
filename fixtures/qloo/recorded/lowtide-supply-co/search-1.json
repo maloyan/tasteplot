@@ -1,0 +1,106 @@
+{
+ "request": {
+  "path": "/search",
+  "params": {
+   "query": "Stüssy",
+   "types": "urn:entity:brand,urn:entity:artist,urn:entity:author,urn:entity:person,urn:entity:book,urn:entity:movie,urn:entity:tv_show,urn:entity:podcast,urn:entity:album,urn:entity:videogame,urn:entity:locality,urn:entity:destination",
+   "take": "8"
+  }
+ },
+ "body": {
+  "results": [
+   {
+    "name": "Stüssy",
+    "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+    "types": [
+     "urn:entity:brand"
+    ],
+    "properties": {
+     "short_description": "Stüssy is an American fashion brand known for its surfwear and streetwear collections since the 1980s."
+    },
+    "popularity": 0.9963384245054331,
+    "disambiguation": "",
+    "tags": [
+     {
+      "name": "Clothing brands of the United States",
+      "tag_id": "urn:tag:wikipedia_category:clothing_brands_of_the_united_states",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "name": "Street fashion",
+      "tag_id": "urn:tag:wikipedia_category:street_fashion",
+      "type": "urn:tag:wikipedia_category"
+     },
+     {
+      "name": "Clothing companies based in Los Angeles",
+      "tag_id": "urn:tag:wikipedia_category:clothing_companies_based_in_los_angeles",
+      "type": "urn:tag:wikipedia_category"
+     }
+    ]
+   },
+   {
+    "name": "Chris Stussy",
+    "entity_id": "24E3163E-4499-47C4-AAD6-F40CF46C8CDE",
+    "types": [
+     "urn:entity:artist"
+    ],
+    "properties": {
+     "short_description": "American rapper and hip hop artist known for his unique style and lyrical content."
+    },
+    "popularity": 0.5219745556001633,
+    "disambiguation": "Chris Stussy",
+    "tags": [
+     {
+      "name": "Electronic",
+      "tag_id": "urn:tag:genre:electronic",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:electronic"
+     },
+     {
+      "name": "Techno",
+      "tag_id": "urn:tag:genre:techno",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:techno"
+     },
+     {
+      "name": "Tech House",
+      "tag_id": "urn:tag:genre:tech_house",
+      "type": "urn:tag:genre",
+      "value": "urn:tag:genre:tech_house"
+     }
+    ]
+   },
+   {
+    "name": "Jan Stussy",
+    "entity_id": "F5088875-4420-4CCD-890A-BD58C1A80B0E",
+    "types": [
+     "urn:entity:person"
+    ],
+    "properties": {
+     "short_description": "American painter and producer (1921–1990)"
+    },
+    "disambiguation": "1921-08-13",
+    "tags": [
+     {
+      "name": "Chairperson",
+      "tag_id": "urn:tag:occupation:person:chairperson",
+      "type": "urn:tag:occupation:person",
+      "value": "urn:tag:occupation:person:chairperson"
+     },
+     {
+      "name": "Actor",
+      "tag_id": "urn:tag:genre:person:actor",
+      "type": "urn:tag:genre:person",
+      "value": "urn:tag:genre:person:actor"
+     },
+     {
+      "name": "20th-century American Painters",
+      "tag_id": "urn:tag:wikipedia_category:wikidata:20th_century_american_painters",
+      "type": "urn:tag:wikipedia_category:wikidata",
+      "value": "urn:tag:wikipedia_category:wikidata:20th_century_american_painters"
+     }
+    ]
+   }
+  ]
+ }
+}

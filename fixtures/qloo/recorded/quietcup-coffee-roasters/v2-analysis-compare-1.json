@@ -1,0 +1,170 @@
+{
+ "request": {
+  "path": "/v2/analysis/compare",
+  "params": {
+   "a.signal.interests.entities": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3,0044C2D6-C96D-4571-8EFE-E81E8CF722D4",
+   "b.signal.interests.entities": "B13C02E3-BA3C-4B39-85B4-ACF12FEBC892",
+   "take": "20"
+  }
+ },
+ "body": {
+  "duration": 20,
+  "results": {
+   "tags": [
+    {
+     "tag_id": "urn:tag:genre:brand:dining",
+     "name": "Dining",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "DA64657B-785C-4A2E-911D-F6A4D93CB2AC",
+     "popularity": 0.9940907012965484,
+     "query": {
+      "score": 0.7298951499148039,
+      "a.signal.interests.entities": [
+       {
+        "entity_id": "22B1BC87-CDFE-4340-86F8-8E0E6E1E6A7D",
+        "name": "Blue Bottle Coffee",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ],
+      "b.signal.interests.entities": [
+       {
+        "entity_id": "B13C02E3-BA3C-4B39-85B4-ACF12FEBC892",
+        "name": "Starbucks",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ]
+     }
+    }
+   ],
+   "a": [
+    {
+     "tag_id": "urn:tag:lifestyle:qloo:sustainability",
+     "name": "Sustainability",
+     "type": "urn:tag",
+     "subtype": "urn:tag:lifestyle:qloo",
+     "entity_id": "D60B3FE0-89DD-490B-8620-2C7F96DD9B1E",
+     "popularity": 0.9478945,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:lifestyle:qloo:community_building",
+     "name": "community-building",
+     "type": "urn:tag",
+     "subtype": "urn:tag:lifestyle:qloo",
+     "entity_id": "0A392327-0F6C-4536-B9D5-AF796ED877AF",
+     "popularity": 0.32564482,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:personal_style:qloo:minimalist",
+     "name": "Minimalist",
+     "type": "urn:tag",
+     "subtype": "urn:tag:personal_style:qloo",
+     "entity_id": "1346B315-594D-4581-B1C9-9C98155E8672",
+     "popularity": 0.9715032,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:keyword:qloo:design",
+     "name": "Design",
+     "type": "urn:tag",
+     "subtype": "urn:tag:keyword:qloo",
+     "entity_id": "FEFEEEC9-7D80-47CF-9F91-08AFC4FC3E40",
+     "popularity": 0.9314736,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:lifestyle:qloo:wellness",
+     "name": "Wellness",
+     "type": "urn:tag",
+     "subtype": "urn:tag:lifestyle:qloo",
+     "entity_id": "3D5840A2-FAD4-4B5B-B317-0EACBC13DCD0",
+     "popularity": 0.9320283,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:aesthetic_property:qloo:elegant",
+     "name": "Elegant",
+     "type": "urn:tag",
+     "subtype": "urn:tag:aesthetic_property:qloo",
+     "entity_id": "09A72255-0C8E-4538-85D9-44F6C28C0ED4",
+     "popularity": 0.96794397,
+     "query": {
+      "count": "1"
+     }
+    }
+   ],
+   "b": [
+    {
+     "tag_id": "urn:tag:genre:brand:food_and_beverage:drinks",
+     "name": "Drinks",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "27B34F65-C558-4E29-85F8-4F8112675202",
+     "popularity": 0.99313515,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:food_and_beverage",
+     "name": "Food & Beverage",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "48D8DA15-8B27-4A51-873D-8C8D2AD349B5",
+     "popularity": 0.9971977,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:mobile_app",
+     "name": "Mobile App",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "688D8A56-A1A9-4DE2-98C8-E42936355805",
+     "popularity": 0.99450934,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:food_and_beverage:drinks:coffee_and_tea",
+     "name": "Coffee & Tea",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "6E05FF75-35C3-4D5A-BD48-2604C8F1314C",
+     "popularity": 0.9771722,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:dining",
+     "name": "Dining",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "DA64657B-785C-4A2E-911D-F6A4D93CB2AC",
+     "popularity": 0.9940907,
+     "query": {
+      "count": "1"
+     }
+    }
+   ],
+   "matchEntities": []
+  }
+ }
+}

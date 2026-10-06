@@ -1,0 +1,17 @@
+{
+  "kind": "tasteplot-llm-transcript",
+  "version": 1,
+  "provider": "illustrative",
+  "recordedAt": "2026-10-05T00:00:00Z",
+  "source": "illustrative-fixture",
+  "note": "ILLUSTRATIVE FIXTURE, not a measurement. Hand-written to show the failure modes that LLM-only site recommendations typically have (invented businesses, real businesses in the wrong neighbourhood, neighbourhoods that do not fit the audience). Invented business names are fictional on purpose. Replace it with real model output by running `npm run eval -- --live --record --confirm-spend` once LLM spend is approved.",
+  "request": {
+    "brand": "Quietcup Coffee Roasters",
+    "metro": "chi",
+    "sites": 3
+  },
+  "turns": [],
+  "completions": [
+    "Here are my recommendations:\n```json\n{\n  \"sites\": [\n    {\n      \"neighborhood\": \"Wicker Park\",\n      \"anchors\": [\n        \"Reckless Records\",\n        \"Copperline Coffee Bar\"\n      ],\n      \"reason\": \"Creative crowd and record shops.\"\n    },\n    {\n      \"neighborhood\": \"Logan Square\",\n      \"anchors\": [\n        \"Myopic Books\",\n        \"Boulevard Bike Collective\"\n      ],\n      \"reason\": \"Cyclists along the boulevards.\"\n    },\n    {\n      \"neighborhood\": \"West Loop\",\n      \"anchors\": [\n        \"Fulton Market Roasting Co.\",\n        \"Randolph Street Vinyl\"\n      ],\n      \"reason\": \"High foot traffic and new offices.\"\n    }\n  ]\n}\n```"
+  ]
+}

@@ -1,0 +1,340 @@
+{
+ "request": {
+  "path": "/v2/analysis/compare",
+  "params": {
+   "a.signal.interests.entities": "92384FD1-363D-4423-926C-EAF478CE079B,7161ADA0-8DC8-471E-A4A8-61EE15578400,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+   "b.signal.interests.entities": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860",
+   "take": "20"
+  }
+ },
+ "body": {
+  "duration": 25,
+  "results": {
+   "tags": [
+    {
+     "tag_id": "urn:tag:genre:brand:fashion",
+     "name": "Fashion",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "7568F752-4D1A-43D7-8822-FCCBB71E8514",
+     "popularity": 0.9984217624244976,
+     "query": {
+      "score": 0.7307481702311143,
+      "a.signal.interests.entities": [
+       {
+        "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+        "name": "Supreme",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       },
+       {
+        "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+        "name": "Stüssy",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ],
+      "b.signal.interests.entities": [
+       {
+        "entity_id": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860",
+        "name": "Nike",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:industry:qloo:fashion",
+     "name": "Fashion",
+     "type": "urn:tag",
+     "subtype": "urn:tag:industry:qloo",
+     "entity_id": "BBE557F2-410C-4A4D-80E9-C91376889887",
+     "popularity": 0.9909979661643709,
+     "query": {
+      "score": 0.7292849950590256,
+      "a.signal.interests.entities": [
+       {
+        "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+        "name": "Supreme",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       },
+       {
+        "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+        "name": "Stüssy",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ],
+      "b.signal.interests.entities": [
+       {
+        "entity_id": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860",
+        "name": "Nike",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:fashion:athletic",
+     "name": "Athletic",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "D876EE2D-54A3-454B-A43B-207A579076DA",
+     "popularity": 0.9894817993092462,
+     "query": {
+      "score": 0.7289855573312215,
+      "a.signal.interests.entities": [
+       {
+        "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+        "name": "Supreme",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ],
+      "b.signal.interests.entities": [
+       {
+        "entity_id": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860",
+        "name": "Nike",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:customer_identity:qloo:trendsetters",
+     "name": "Trendsetters",
+     "type": "urn:tag",
+     "subtype": "urn:tag:customer_identity:qloo",
+     "entity_id": "493A26FE-E813-43AC-8647-B3F367EDEB3C",
+     "popularity": 0.988675233428862,
+     "query": {
+      "score": 0.7288261773953152,
+      "a.signal.interests.entities": [
+       {
+        "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+        "name": "Supreme",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       },
+       {
+        "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+        "name": "Stüssy",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ],
+      "b.signal.interests.entities": [
+       {
+        "entity_id": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860",
+        "name": "Nike",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:emotional_tone:qloo:confidence",
+     "name": "Confidence",
+     "type": "urn:tag",
+     "subtype": "urn:tag:emotional_tone:qloo",
+     "entity_id": "C4B86883-E1B3-4C46-AEA4-7932EEEB34BD",
+     "popularity": 0.9872769714338541,
+     "query": {
+      "score": 0.7285497378095036,
+      "a.signal.interests.entities": [
+       {
+        "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+        "name": "Supreme",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ],
+      "b.signal.interests.entities": [
+       {
+        "entity_id": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860",
+        "name": "Nike",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ]
+     }
+    },
+    {
+     "tag_id": "urn:tag:product_service:qloo:accessories",
+     "name": "Accessories",
+     "type": "urn:tag",
+     "subtype": "urn:tag:product_service:qloo",
+     "entity_id": "03B7E5AD-D7A1-4F4A-878E-BC61FA80728D",
+     "popularity": 0.9863987242303781,
+     "query": {
+      "score": 0.728376010988578,
+      "a.signal.interests.entities": [
+       {
+        "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+        "name": "Supreme",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       },
+       {
+        "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+        "name": "Stüssy",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ],
+      "b.signal.interests.entities": [
+       {
+        "entity_id": "C70CE2B8-0AD1-4150-BF18-5A6347F2E860",
+        "name": "Nike",
+        "subtype": "urn:entity:brand",
+        "disambiguation": ""
+       }
+      ]
+     }
+    }
+   ],
+   "a": [
+    {
+     "tag_id": "urn:tag:lifestyle:qloo:urban_lifestyle",
+     "name": "Urban Lifestyle",
+     "type": "urn:tag",
+     "subtype": "urn:tag:lifestyle:qloo",
+     "entity_id": "A4F8842B-D03F-4E21-BBB4-F77CA2B22742",
+     "popularity": 0.953996,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:lifestyle:qloo:urban",
+     "name": "Urban",
+     "type": "urn:tag",
+     "subtype": "urn:tag:lifestyle:qloo",
+     "entity_id": "2C1DFFD4-0E7F-4F35-84A9-D59FA8B67DE9",
+     "popularity": 0.9893339,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:adjective:qloo:edgy",
+     "name": "edgy",
+     "type": "urn:tag",
+     "subtype": "urn:tag:adjective:qloo",
+     "entity_id": "DD1634DC-C8B8-4863-82A9-B224B533B675",
+     "popularity": 0.9234885,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:customer_identity:qloo:trendsetters",
+     "name": "Trendsetters",
+     "type": "urn:tag",
+     "subtype": "urn:tag:customer_identity:qloo",
+     "entity_id": "493A26FE-E813-43AC-8647-B3F367EDEB3C",
+     "popularity": 0.98867524,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:customer_segment:qloo:fashion_forward_individuals",
+     "name": "Fashion-Forward Individuals",
+     "type": "urn:tag",
+     "subtype": "urn:tag:customer_segment:qloo",
+     "entity_id": "91C43D24-03B3-4FEC-9D04-E548AC3656BC",
+     "popularity": 0.97848296,
+     "query": {
+      "count": "2"
+     }
+    },
+    {
+     "tag_id": "urn:tag:personal_style:qloo:streetwear",
+     "name": "Streetwear",
+     "type": "urn:tag",
+     "subtype": "urn:tag:personal_style:qloo",
+     "entity_id": "4DB0AC43-1AAF-4A0D-A8B4-787CC379A207",
+     "popularity": 0.94627666,
+     "query": {
+      "count": "2"
+     }
+    }
+   ],
+   "b": [
+    {
+     "tag_id": "urn:tag:personal_style:qloo:active",
+     "name": "active",
+     "type": "urn:tag",
+     "subtype": "urn:tag:personal_style:qloo",
+     "entity_id": "01430377-252B-4A3B-A872-B388B8652F10",
+     "popularity": 0.87255013,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:lifestyle:qloo:professional_sports",
+     "name": "professional sports",
+     "type": "urn:tag",
+     "subtype": "urn:tag:lifestyle:qloo",
+     "entity_id": "037B0838-23DE-41C0-AD1B-A639A281910B",
+     "popularity": 0.32564482,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:product_service:qloo:accessories",
+     "name": "Accessories",
+     "type": "urn:tag",
+     "subtype": "urn:tag:product_service:qloo",
+     "entity_id": "03B7E5AD-D7A1-4F4A-878E-BC61FA80728D",
+     "popularity": 0.9863987,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:fashion:footwear:sneaker:running",
+     "name": "Running",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "0442D93B-5C6B-42F6-BAA3-4AE9A46CAF00",
+     "popularity": 0.91308886,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:influencer_appeal:qloo:sports_personalities",
+     "name": "sports personalities",
+     "type": "urn:tag",
+     "subtype": "urn:tag:influencer_appeal:qloo",
+     "entity_id": "05128A94-1B3B-47C5-8897-5FF65CCD3A10",
+     "popularity": 0.75776553,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:influencer_appeal:qloo:fitness_influencers",
+     "name": "Fitness Influencers",
+     "type": "urn:tag",
+     "subtype": "urn:tag:influencer_appeal:qloo",
+     "entity_id": "06AF4463-FE00-4747-AF1D-A4CFA5C1D9D2",
+     "popularity": 0.9417468,
+     "query": {
+      "count": "1"
+     }
+    }
+   ],
+   "matchEntities": []
+  }
+ }
+}

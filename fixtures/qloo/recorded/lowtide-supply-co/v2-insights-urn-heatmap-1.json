@@ -1,0 +1,252 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:heatmap",
+   "signal.interests.entities": "92384FD1-363D-4423-926C-EAF478CE079B,7161ADA0-8DC8-471E-A4A8-61EE15578400,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+   "signal.interests.tags": "urn:tag:ambience:qloo:streetwear_culture_influence,urn:tag:genre:brand:fashion:footwear:sneakers,urn:tag:genre:media:skateboarding",
+   "filter.location.query": "Los Angeles"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "heatmap": [
+    {
+     "location": {
+      "latitude": 34.05487,
+      "longitude": -118.24036,
+      "geohash": "9q5ctr"
+     },
+     "query": {
+      "affinity": 1,
+      "affinity_rank": 0.9944833333333335,
+      "popularity": 1,
+      "entity_artist_affinity_rank": 0.999526,
+      "entity_brand_affinity_rank": 0.998505,
+      "tag_affinity_rank": 0.985419,
+      "entity_artist_affinity": 0.9983324068927182,
+      "entity_brand_affinity": 1,
+      "tag_affinity": 1
+     }
+    },
+    {
+     "location": {
+      "latitude": 33.98346,
+      "longitude": -118.47107,
+      "geohash": "9q5c24"
+     },
+     "query": {
+      "affinity": 0.9994441356309061,
+      "affinity_rank": 0.9927045,
+      "popularity": 0.9972206781545303,
+      "entity_artist_affinity_rank": 0.999196,
+      "entity_brand_affinity_rank": 0.9970985,
+      "tag_affinity_rank": 0.981819,
+      "entity_artist_affinity": 0.9872151195108394,
+      "entity_brand_affinity": 0.9983324068927182,
+      "tag_affinity": 0.9994441356309061
+     }
+    },
+    {
+     "location": {
+      "latitude": 33.988953,
+      "longitude": -118.47107,
+      "geohash": "9q5c25"
+     },
+     "query": {
+      "affinity": 0.9988882712618121,
+      "affinity_rank": 0.9923893333333332,
+      "popularity": 0.9961089494163424,
+      "entity_artist_affinity_rank": 0.999105,
+      "entity_brand_affinity_rank": 0.996586,
+      "tag_affinity_rank": 0.981477,
+      "entity_artist_affinity": 0.9838799332962757,
+      "entity_brand_affinity": 0.9961089494163424,
+      "tag_affinity": 0.9983324068927182
+     }
+    },
+    {
+     "location": {
+      "latitude": 34.098816,
+      "longitude": -118.32825,
+      "geohash": "9q5cgr"
+     },
+     "query": {
+      "affinity": 0.9983324068927182,
+      "affinity_rank": 0.9922331666666665,
+      "popularity": 0.9994441356309061,
+      "entity_artist_affinity_rank": 0.99937,
+      "entity_brand_affinity_rank": 0.9974105,
+      "tag_affinity_rank": 0.979919,
+      "entity_artist_affinity": 0.9938854919399667,
+      "entity_brand_affinity": 0.9994441356309061,
+      "tag_affinity": 0.9966648137854364
+     }
+    },
+    {
+     "location": {
+      "latitude": 33.945007,
+      "longitude": -118.40515,
+      "geohash": "9q5c1e"
+     },
+     "query": {
+      "affinity": 0.9977765425236242,
+      "affinity_rank": 0.9919628333333333,
+      "popularity": 0.9944413563090606,
+      "entity_artist_affinity_rank": 0.998197,
+      "entity_brand_affinity_rank": 0.9962005,
+      "tag_affinity_rank": 0.981491,
+      "entity_artist_affinity": 0.952751528627015,
+      "entity_brand_affinity": 0.9927737632017788,
+      "tag_affinity": 0.9988882712618121
+     }
+    },
+    {
+     "location": {
+      "latitude": 33.977966,
+      "longitude": -118.47107,
+      "geohash": "9q5c21"
+     },
+     "query": {
+      "affinity": 0.9972206781545303,
+      "affinity_rank": 0.9918688333333332,
+      "popularity": 0.9872151195108394,
+      "entity_artist_affinity_rank": 0.998736,
+      "entity_brand_affinity_rank": 0.9960875,
+      "tag_affinity_rank": 0.980783,
+      "entity_artist_affinity": 0.9744302390216787,
+      "entity_brand_affinity": 0.9922178988326849,
+      "tag_affinity": 0.9972206781545303
+     }
+    },
+    {
+     "location": {
+      "latitude": 34.03839,
+      "longitude": -118.25134,
+      "geohash": "9q5cth"
+     },
+     "query": {
+      "affinity": 0.9966648137854364,
+      "affinity_rank": 0.9917334999999999,
+      "popularity": 0.9977765425236242,
+      "entity_artist_affinity_rank": 0.99943,
+      "entity_brand_affinity_rank": 0.9970015,
+      "tag_affinity_rank": 0.978769,
+      "entity_artist_affinity": 0.9961089494163424,
+      "entity_brand_affinity": 0.9977765425236242,
+      "tag_affinity": 0.9944413563090606
+     }
+    },
+    {
+     "location": {
+      "latitude": 34.082336,
+      "longitude": -118.33923,
+      "geohash": "9q5cgh"
+     },
+     "query": {
+      "affinity": 0.9961089494163424,
+      "affinity_rank": 0.9916376666666666,
+      "popularity": 0.9933296275708727,
+      "entity_artist_affinity_rank": 0.999301,
+      "entity_brand_affinity_rank": 0.997143,
+      "tag_affinity_rank": 0.978469,
+      "entity_artist_affinity": 0.991106170094497,
+      "entity_brand_affinity": 0.9988882712618121,
+      "tag_affinity": 0.9933296275708727
+     }
+    },
+    {
+     "location": {
+      "latitude": 34.131775,
+      "longitude": -118.31726,
+      "geohash": "9q5f5t"
+     },
+     "query": {
+      "affinity": 0.9955530850472485,
+      "affinity_rank": 0.9916156666666667,
+      "popularity": 0.990550305725403,
+      "entity_artist_affinity_rank": 0.998104,
+      "entity_brand_affinity_rank": 0.995946,
+      "tag_affinity_rank": 0.980797,
+      "entity_artist_affinity": 0.9505280711506392,
+      "entity_brand_affinity": 0.9916620344635909,
+      "tag_affinity": 0.9977765425236242
+     }
+    },
+    {
+     "location": {
+      "latitude": 34.043884,
+      "longitude": -118.26233,
+      "geohash": "9q5csv"
+     },
+     "query": {
+      "affinity": 0.9949972206781545,
+      "affinity_rank": 0.9915388333333334,
+      "popularity": 0.9983324068927182,
+      "entity_artist_affinity_rank": 0.99882,
+      "entity_brand_affinity_rank": 0.9964595,
+      "tag_affinity_rank": 0.979337,
+      "entity_artist_affinity": 0.9777654252362423,
+      "entity_brand_affinity": 0.9949972206781545,
+      "tag_affinity": 0.9955530850472485
+     }
+    },
+    {
+     "location": {
+      "latitude": 34.12079,
+      "longitude": -118.29529,
+      "geohash": "9q5fh5"
+     },
+     "query": {
+      "affinity": 0.9944413563090606,
+      "affinity_rank": 0.9915043333333333,
+      "popularity": 0.9949972206781545,
+      "entity_artist_affinity_rank": 0.999115,
+      "entity_brand_affinity_rank": 0.996301,
+      "tag_affinity_rank": 0.979097,
+      "entity_artist_affinity": 0.9844357976653697,
+      "entity_brand_affinity": 0.9944413563090606,
+      "tag_affinity": 0.9949972206781545
+     }
+    },
+    {
+     "location": {
+      "latitude": 34.049377,
+      "longitude": -118.25134,
+      "geohash": "9q5ctn"
+     },
+     "query": {
+      "affinity": 0.9938854919399667,
+      "affinity_rank": 0.9912993333333334,
+      "popularity": 0.9988882712618121,
+      "entity_artist_affinity_rank": 0.999206,
+      "entity_brand_affinity_rank": 0.9962040000000001,
+      "tag_affinity_rank": 0.978488,
+      "entity_artist_affinity": 0.9883268482490273,
+      "entity_brand_affinity": 0.9933296275708727,
+      "tag_affinity": 0.9938854919399667
+     }
+    }
+   ]
+  },
+  "query": {
+   "localities": {
+    "filter": [
+     {
+      "entity_id": "41C29F19-6897-48B5-A421-F416969E98E0",
+      "name": "Los Angeles",
+      "subtype": "urn:entity:locality",
+      "location": {
+       "lat": 34.0895387518088,
+       "lon": -118.40722292283367
+      },
+      "popularity": 0.9996406,
+      "disambiguation": "Los Angeles, Los Angeles County, California, United States"
+     }
+    ]
+   }
+  },
+  "_curated_note": "first 12 of 1800 cells"
+ }
+}

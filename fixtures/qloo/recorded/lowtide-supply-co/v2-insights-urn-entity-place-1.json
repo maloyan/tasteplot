@@ -1,0 +1,299 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:entity:place",
+   "signal.interests.entities": "92384FD1-363D-4423-926C-EAF478CE079B,7161ADA0-8DC8-471E-A4A8-61EE15578400,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+   "signal.interests.tags": "urn:tag:ambience:qloo:streetwear_culture_influence,urn:tag:genre:brand:fashion:footwear:sneakers,urn:tag:genre:media:skateboarding",
+   "filter.location": "POINT(-118.2509 34.0441)",
+   "filter.location.radius": "1000",
+   "feature.explainability": "true",
+   "take": "6"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "entities": [
+    {
+     "name": "Sheraton Grand Los Angeles",
+     "tags": [
+      {
+       "id": "urn:tag:decor:qloo:upscale",
+       "name": "Upscale",
+       "type": "urn:tag:decor:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:view:qloo:skyline_view",
+       "name": "Skyline view",
+       "type": "urn:tag:view:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:amenity:qloo:front_desk_24_7",
+       "name": "Front desk 247",
+       "type": "urn:tag:amenity:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 34.0478628,
+      "lon": -118.2583756,
+      "geohash": "9q5csynzhjdy"
+     },
+     "entity_id": "9BC80BFC-3FD3-4535-9306-AF28D9DC6CDC",
+     "popularity": 0.9949024943714965,
+     "properties": {
+      "address": "711 S Hope St Los Angeles, CA 90017",
+      "geocode": {
+       "city": "Los Angeles",
+       "name": "Downtown",
+       "metro": "Los Angeles",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "California",
+       "admin2_region": "Los Angeles County"
+      },
+      "price_level": null,
+      "business_rating": 4.400000095367432,
+      "short_description": "Upscale high-rise hotel in downtown LA connected to Bloc shopping center, near metro and Crypto.com Arena, with sophisticated rooms and farm-to-table dining."
+     },
+     "disambiguation": "711 S Hope St Los Angeles, CA 90017",
+     "query": {
+      "affinity": 0.8791229930640423,
+      "distance": 805.8900036875075,
+      "measurements": {
+       "audience_growth": 1.7320508075688774
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+         "score": 0.3341983943503141
+        },
+        {
+         "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+         "score": 0.33381999648867655
+        },
+        {
+         "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+         "score": 0.3319816091610094
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Freehand Los Angeles",
+     "tags": [
+      {
+       "id": "urn:tag:setting:qloo:historic_building",
+       "name": "Historic building",
+       "type": "urn:tag:setting:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:ambience:qloo:modern",
+       "name": "Modern",
+       "type": "urn:tag:ambience:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:amenity:qloo:luggage_storage",
+       "name": "Luggage storage",
+       "type": "urn:tag:amenity:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 34.044755099999996,
+      "lon": -118.2564556,
+      "geohash": "9q5ctj8m0fhk"
+     },
+     "entity_id": "4ADF7484-9114-4513-A589-67B7047E2813",
+     "popularity": 0.9960790847000168,
+     "properties": {
+      "address": "416 W 8th St Los Angeles, CA 90014",
+      "geocode": {
+       "city": "Los Angeles",
+       "name": "Downtown",
+       "metro": "Los Angeles",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "California",
+       "admin2_region": "Los Angeles County"
+      },
+      "price_level": null,
+      "business_rating": 4.099999904632568,
+      "short_description": "Hip boutique hotel in a historic 1924 building in Downtown LA with rooftop pool, bar, and mixed dorms, near metro and Staples Center."
+     },
+     "disambiguation": "416 W 8th St Los Angeles, CA 90014",
+     "query": {
+      "affinity": 0.8775021060636766,
+      "distance": 517.0315712503823,
+      "measurements": {
+       "audience_growth": 1.138989594902999
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+         "score": 0.336735513383332
+        },
+        {
+         "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+         "score": 0.3352750953857275
+        },
+        {
+         "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+         "score": 0.3279893912309407
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Exchange LA",
+     "tags": [
+      {
+       "id": "urn:tag:ambience:qloo:elegant",
+       "name": "Elegant",
+       "type": "urn:tag:ambience:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:genre:place:tourist_attraction",
+       "name": "Tourist attraction",
+       "type": "urn:tag:genre:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:neighborhood_characteristic:qloo:central",
+       "name": "Central",
+       "type": "urn:tag:neighborhood_characteristic:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 34.0453409,
+      "lon": -118.2512491,
+      "geohash": "9q5ctju06psk"
+     },
+     "entity_id": "0095E991-1AF9-41DA-A9AC-6B99CBAC8412",
+     "popularity": 0.9993148473998561,
+     "properties": {
+      "address": "618 S Spring St Los Angeles, CA 90014",
+      "geocode": {
+       "city": "Los Angeles",
+       "name": "Downtown",
+       "metro": "Los Angeles",
+       "country": "United States",
+       "country_code": "US",
+       "admin1_region": "California",
+       "admin2_region": "Los Angeles County"
+      },
+      "price_level": 3,
+      "business_rating": 3.799999952316284,
+      "short_description": "Four-story EDM nightclub in a restored 1930s stock exchange building with seven bars, VIP bottle service, LED screens, and event rentals for 1,500 guests."
+     },
+     "disambiguation": "618 S Spring St Los Angeles, CA 90014",
+     "query": {
+      "affinity": 0.8711295032834224,
+      "distance": 141.6813303172048,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+         "score": 0.3432471167551177
+        },
+        {
+         "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+         "score": 0.3306501830876411
+        },
+        {
+         "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+         "score": 0.3261027001572412
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "query": {
+   "explainability": {
+    "signal.interests.entities": {
+     "effect_on_top3_recs": [
+      {
+       "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+       "avg_score": 0.33806034149625463
+      },
+      {
+       "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+       "avg_score": 0.3332484249873484
+      },
+      {
+       "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+       "avg_score": 0.3286912335163971
+      }
+     ],
+     "effect_on_top5_recs": [
+      {
+       "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+       "avg_score": 0.3400116750051202
+      },
+      {
+       "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+       "avg_score": 0.3318927950919423
+      },
+      {
+       "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+       "avg_score": 0.3280955299029376
+      }
+     ],
+     "effect_on_top10_recs": [
+      {
+       "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+       "avg_score": 0.33971717957327846
+      },
+      {
+       "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+       "avg_score": 0.3322596791599213
+      },
+      {
+       "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+       "avg_score": 0.3280231412668004
+      }
+     ],
+     "effect_on_all_recs": [
+      {
+       "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+       "avg_score": 0.33971717957327846
+      },
+      {
+       "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+       "avg_score": 0.3322596791599213
+      },
+      {
+       "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+       "avg_score": 0.3280231412668004
+      }
+     ]
+    }
+   }
+  }
+ }
+}

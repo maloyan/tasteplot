@@ -1,0 +1,243 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:entity:brand",
+   "signal.interests.entities": "DB4CE34E-3A63-4947-946F-9D52502C5762,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3,68931B01-2254-4E92-96C5-E4474514579A",
+   "signal.interests.tags": "urn:tag:genre:media:outdoors,urn:tag:genre:media:cycling",
+   "signal.location": "POINT(-87.6776 41.9088)",
+   "signal.location.radius": "1200",
+   "filter.exclude.entities": "DB4CE34E-3A63-4947-946F-9D52502C5762,8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+   "feature.explainability": "true",
+   "take": "3"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "entities": [
+    {
+     "name": "The North Face",
+     "tags": [
+      {
+       "id": "urn:tag:wikipedia_category:2010s_fashion",
+       "name": "2010s fashion",
+       "type": "urn:tag:wikipedia_category"
+      },
+      {
+       "id": "urn:tag:wikipedia_category:clothing_brands_of_the_united_states",
+       "name": "Clothing brands of the United States",
+       "type": "urn:tag:wikipedia_category"
+      },
+      {
+       "id": "urn:tag:wikipedia_category:mountaineering_equipment_manufacturers",
+       "name": "Mountaineering equipment manufacturers",
+       "type": "urn:tag:wikipedia_category"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "DB03F250-64F3-47AB-8756-BC1C4E13EBFD",
+     "popularity": 0.9972453425098744,
+     "properties": {
+      "short_description": "The North Face is a premier outdoor brand offering clothing, gear, backpacks, and footwear for exploration and adventure."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9696266291473737,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+         "score": 0.3733268589593476
+        },
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.33579380752452304
+        },
+        {
+         "entity_id": "68931B01-2254-4E92-96C5-E4474514579A",
+         "score": 0.29087933351612927
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Recreational Equipment Inc",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion:casual",
+       "name": "Casual",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:aesthetic_property:qloo:functionalist",
+       "name": "Functionalist",
+       "type": "urn:tag:aesthetic_property:qloo"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "205AF33F-118E-4C49-9721-6BDBAF981DA0",
+     "popularity": 0.9928039870488718,
+     "properties": {
+      "short_description": "REI is a retail co-op specializing in outdoor gear, clothing, and equipment, promoting a life outdoors since 1938."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9606822961704188,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+         "score": 0.37539206202406394
+        },
+        {
+         "entity_id": "68931B01-2254-4E92-96C5-E4474514579A",
+         "score": 0.3203582943504214
+        },
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.3042496436255147
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Arc'teryx",
+     "tags": [
+      {
+       "id": "urn:tag:wikipedia_category:camping_equipment_manufacturers",
+       "name": "Camping equipment manufacturers",
+       "type": "urn:tag:wikipedia_category"
+      },
+      {
+       "id": "urn:tag:wikipedia_category:mountaineering_equipment_manufacturers",
+       "name": "Mountaineering equipment manufacturers",
+       "type": "urn:tag:wikipedia_category"
+      },
+      {
+       "id": "urn:tag:wikipedia_category:clothing_companies_of_canada",
+       "name": "Clothing companies of Canada",
+       "type": "urn:tag:wikipedia_category"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "B2A2238B-5FDC-46CD-B6F9-A32DB1474C70",
+     "popularity": 0.9824888542320015,
+     "properties": {
+      "short_description": "Arc'teryx is a brand specializing in high-performance outdoor clothing, technical outerwear, and accessories designed for mountain activities and varied terrain."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9604335046000957,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+         "score": 0.3714537729580448
+        },
+        {
+         "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+         "score": 0.34723063205793386
+        },
+        {
+         "entity_id": "68931B01-2254-4E92-96C5-E4474514579A",
+         "score": 0.28131559498402126
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "query": {
+   "geospatial": {
+    "panel_size": {
+     "context": 72776032816,
+     "target": 287374142
+    }
+   },
+   "explainability": {
+    "signal.interests.entities": {
+     "effect_on_top3_recs": [
+      {
+       "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+       "avg_score": 0.37339089798048547
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.32909136106932385
+      },
+      {
+       "entity_id": "68931B01-2254-4E92-96C5-E4474514579A",
+       "avg_score": 0.2975177409501906
+      }
+     ],
+     "effect_on_top5_recs": [
+      {
+       "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+       "avg_score": 0.37339089798048547
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.32909136106932385
+      },
+      {
+       "entity_id": "68931B01-2254-4E92-96C5-E4474514579A",
+       "avg_score": 0.2975177409501906
+      }
+     ],
+     "effect_on_top10_recs": [
+      {
+       "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+       "avg_score": 0.37339089798048547
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.32909136106932385
+      },
+      {
+       "entity_id": "68931B01-2254-4E92-96C5-E4474514579A",
+       "avg_score": 0.2975177409501906
+      }
+     ],
+     "effect_on_all_recs": [
+      {
+       "entity_id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+       "avg_score": 0.37339089798048547
+      },
+      {
+       "entity_id": "8F2EF27E-93E8-44F7-95F8-6A4BB0ADD0B3",
+       "avg_score": 0.32909136106932385
+      },
+      {
+       "entity_id": "68931B01-2254-4E92-96C5-E4474514579A",
+       "avg_score": 0.2975177409501906
+      }
+     ]
+    }
+   }
+  }
+ }
+}

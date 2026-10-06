@@ -1,0 +1,102 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:demographics",
+   "signal.interests.entities": "92384FD1-363D-4423-926C-EAF478CE079B,7161ADA0-8DC8-471E-A4A8-61EE15578400,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+   "signal.interests.tags": "urn:tag:ambience:qloo:streetwear_culture_influence,urn:tag:genre:brand:fashion:footwear:sneakers,urn:tag:genre:media:skateboarding"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "demographics": [
+    {
+     "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+     "query": {
+      "age": {
+       "24_and_younger": 0.37,
+       "25_to_29": 0.08,
+       "30_to_34": 0.23,
+       "35_to_44": -0.66,
+       "45_to_54": -0.47000000000000003,
+       "55_and_older": -0.59
+      },
+      "gender": {
+       "male": 0.39,
+       "female": -0.39
+      }
+     }
+    },
+    {
+     "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+     "query": {
+      "age": {
+       "24_and_younger": 0.38,
+       "25_to_29": 0.56,
+       "30_to_34": 0.35000000000000003,
+       "35_to_44": -0.68,
+       "45_to_54": -0.38,
+       "55_and_older": -0.44
+      },
+      "gender": {
+       "male": -0.28,
+       "female": 0.28
+      }
+     }
+    },
+    {
+     "entity_id": "urn:tag:genre:media:skateboarding",
+     "query": {
+      "age": {
+       "24_and_younger": 0.45,
+       "25_to_29": 0.55,
+       "30_to_34": 0.64,
+       "35_to_44": -0.93,
+       "45_to_54": -0.45,
+       "55_and_older": -0.77
+      },
+      "gender": {
+       "male": 0.97,
+       "female": -0.97
+      }
+     }
+    },
+    {
+     "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+     "query": {
+      "age": {
+       "24_and_younger": 0.43,
+       "25_to_29": 0.13,
+       "30_to_34": 0.33,
+       "35_to_44": -0.6900000000000001,
+       "45_to_54": -0.45,
+       "55_and_older": -0.58
+      },
+      "gender": {
+       "male": 0.35000000000000003,
+       "female": -0.35000000000000003
+      }
+     }
+    },
+    {
+     "entity_id": "urn:tag:genre:brand:fashion:footwear:sneakers",
+     "query": {
+      "age": {
+       "24_and_younger": -0.13,
+       "25_to_29": 0.47,
+       "30_to_34": 0.76,
+       "35_to_44": 0.67,
+       "45_to_54": -0.64,
+       "55_and_older": -0.83
+      },
+      "gender": {
+       "male": -0.08,
+       "female": 0.08
+      }
+     }
+    }
+   ]
+  }
+ }
+}

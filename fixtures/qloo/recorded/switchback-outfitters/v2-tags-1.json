@@ -1,0 +1,104 @@
+{
+ "request": {
+  "path": "/v2/tags",
+  "params": {
+   "filter.query": "outdoors",
+   "take": "8"
+  }
+ },
+ "body": {
+  "duration": 13,
+  "success": true,
+  "results": {
+   "tags": [
+    {
+     "parents": [
+      {
+       "type": "urn:entity:book"
+      },
+      {
+       "type": "urn:entity:author"
+      }
+     ],
+     "type": "urn:tag:genre:media",
+     "id": "urn:tag:genre:media:outdoors",
+     "name": "Outdoors",
+     "popularity": 0.99884635,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:tv_show"
+      },
+      {
+       "type": "urn:entity:podcast"
+      },
+      {
+       "type": "urn:entity:movie"
+      }
+     ],
+     "type": "urn:tag:keyword:qloo",
+     "id": "urn:tag:keyword:qloo:outdoors",
+     "name": "Outdoors",
+     "popularity": 0.8767732,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:service_options:place",
+     "id": "urn:tag:service_options:place:outdoor_seating",
+     "name": "Outdoor seating",
+     "popularity": 0.9999771,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:service_options:place",
+     "id": "urn:tag:service_options:place:outdoor_services",
+     "name": "Outdoor services",
+     "popularity": 0.9997311,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:genre:place",
+     "id": "urn:tag:genre:place:outdoor_sports_store",
+     "name": "Outdoor sports store",
+     "popularity": 0.99930185,
+     "properties": {},
+     "tags": []
+    },
+    {
+     "parents": [
+      {
+       "type": "urn:entity:place"
+      }
+     ],
+     "type": "urn:tag:category:place",
+     "id": "urn:tag:category:place:outdoor_sports_store",
+     "name": "Outdoor sports store",
+     "popularity": 0.99930185,
+     "properties": {},
+     "tags": []
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "request": {
+  "path": "/v2/analysis/compare",
+  "params": {
+   "a.signal.interests.entities": "AFBD8046-4EAC-4C0B-8348-955B033A8573,CD5F4913-A6B1-421C-8958-42A281426BB5,99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+   "b.signal.interests.entities": "8C8D91E4-F072-4F20-A5D1-566B40A20581",
+   "take": "20"
+  }
+ },
+ "body": {
+  "duration": 17,
+  "results": {
+   "tags": [],
+   "a": [
+    {
+     "tag_id": "urn:tag:audience:qloo:literary",
+     "name": "Literary",
+     "type": "urn:tag",
+     "subtype": "urn:tag:audience:qloo",
+     "entity_id": "01CA9E2F-4425-46B5-B249-BA20DC0D7458",
+     "popularity": 0.8587524,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:media:romance",
+     "name": "Romance",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:media",
+     "entity_id": "0679D597-7B5F-4AC0-928D-CAAC4BAB3024",
+     "popularity": 0.99998116,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:dreams",
+     "name": "Dreams",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "0D8D2C67-2836-4823-828D-8A6B10C4DAFE",
+     "popularity": 0.9048489,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:brand:entertainment",
+     "name": "Entertainment",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:brand",
+     "entity_id": "0EAB9409-0ED7-4597-9CED-5339868BE668",
+     "popularity": 0.99784094,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:genre:media:contemporary",
+     "name": "Contemporary",
+     "type": "urn:tag",
+     "subtype": "urn:tag:genre:media",
+     "entity_id": "121AC53D-2502-4B09-9F12-1285D60CC276",
+     "popularity": 0.99991035,
+     "query": {
+      "count": "1"
+     }
+    },
+    {
+     "tag_id": "urn:tag:theme:qloo:existentialism",
+     "name": "Existentialism",
+     "type": "urn:tag",
+     "subtype": "urn:tag:theme:qloo",
+     "entity_id": "14E0AD82-2ACC-4B63-9246-C0C478A38122",
+     "popularity": 0.9749815,
+     "query": {
+      "count": "1"
+     }
+    }
+   ],
+   "b": [],
+   "matchEntities": []
+  }
+ }
+}

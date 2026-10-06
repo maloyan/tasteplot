@@ -1,0 +1,271 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:entity:brand",
+   "signal.interests.entities": "AFBD8046-4EAC-4C0B-8348-955B033A8573,CD5F4913-A6B1-421C-8958-42A281426BB5,99EE4D7C-2722-4903-86A5-1CB829A8D1EC,5ADB94A4-F04A-40CA-A82D-209417A8666A",
+   "signal.interests.tags": "urn:tag:genre:media:literary_fiction,urn:tag:nearby_attraction:qloo:bookstores,urn:tag:resy:collection:place:natural_wine",
+   "signal.location": "POINT(-0.0752 51.5463)",
+   "signal.location.radius": "800",
+   "filter.exclude.entities": "AFBD8046-4EAC-4C0B-8348-955B033A8573,CD5F4913-A6B1-421C-8958-42A281426BB5,99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+   "feature.explainability": "true",
+   "take": "3"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "entities": [
+    {
+     "name": "Toast",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion:casual",
+       "name": "Casual",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:aesthetic_property:qloo:natural_tones",
+       "name": "Natural Tones",
+       "type": "urn:tag:aesthetic_property:qloo"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "3354D05D-53C8-4DDF-8330-C918C2D057C0",
+     "popularity": 0.9203014019087657,
+     "properties": {
+      "short_description": "Toast is a technology company providing a restaurant point of sale (POS) system and related software solutions to streamline restaurant operations."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9178803668553699,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "5ADB94A4-F04A-40CA-A82D-209417A8666A",
+         "score": 0.28426121362586215
+        },
+        {
+         "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+         "score": 0.25216154575395094
+        },
+        {
+         "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+         "score": 0.2358968510952459
+        },
+        {
+         "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+         "score": 0.22768038952494118
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Bella Freud",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:aesthetic_property:qloo:graphic_lettering",
+       "name": "Graphic Lettering",
+       "type": "urn:tag:aesthetic_property:qloo"
+      },
+      {
+       "id": "urn:tag:aesthetic_property:qloo:vintage_70s_silhouettes",
+       "name": "Vintage 70s Silhouettes",
+       "type": "urn:tag:aesthetic_property:qloo"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "737A4644-003A-4BB5-B9F2-B0BEA0968BF2",
+     "popularity": 0.804563407977488,
+     "properties": {
+      "short_description": "Bella Freud is a London-based fashion brand known for playful, 70s-inspired tailoring, dresses, perfumes, candles, and lifestyle pieces."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9114960447157123,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "5ADB94A4-F04A-40CA-A82D-209417A8666A",
+         "score": 0.2983384231680359
+        },
+        {
+         "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+         "score": 0.24206566105375868
+        },
+        {
+         "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+         "score": 0.24187005896558944
+        },
+        {
+         "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+         "score": 0.21772585681261605
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Alexa Chung",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion:casual",
+       "name": "Casual",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:aesthetic_property:qloo:vintage_inspired",
+       "name": "Vintage-Inspired",
+       "type": "urn:tag:aesthetic_property:qloo"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "FE7E25A3-334E-4EB0-A683-01A3E269499B",
+     "popularity": 0.8896611347493686,
+     "properties": {
+      "short_description": "Alexa Chung is a fashion brand founded in 2017 by Alexa Chung, offering a curated wardrobe and stylish clothing collections."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9089400652199114,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "5ADB94A4-F04A-40CA-A82D-209417A8666A",
+         "score": 0.28028218919419323
+        },
+        {
+         "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+         "score": 0.25286306452339585
+        },
+        {
+         "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+         "score": 0.24558416152602963
+        },
+        {
+         "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+         "score": 0.22127058475638123
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "query": {
+   "geospatial": {
+    "panel_size": {
+     "context": 25836485411,
+     "target": 133439589
+    }
+   },
+   "explainability": {
+    "signal.interests.entities": {
+     "effect_on_top3_recs": [
+      {
+       "entity_id": "5ADB94A4-F04A-40CA-A82D-209417A8666A",
+       "avg_score": 0.2876272753293638
+      },
+      {
+       "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+       "avg_score": 0.2490300904437018
+      },
+      {
+       "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+       "avg_score": 0.2411170238622883
+      },
+      {
+       "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+       "avg_score": 0.22222561036464614
+      }
+     ],
+     "effect_on_top5_recs": [
+      {
+       "entity_id": "5ADB94A4-F04A-40CA-A82D-209417A8666A",
+       "avg_score": 0.2876272753293638
+      },
+      {
+       "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+       "avg_score": 0.2490300904437018
+      },
+      {
+       "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+       "avg_score": 0.2411170238622883
+      },
+      {
+       "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+       "avg_score": 0.22222561036464614
+      }
+     ],
+     "effect_on_top10_recs": [
+      {
+       "entity_id": "5ADB94A4-F04A-40CA-A82D-209417A8666A",
+       "avg_score": 0.2876272753293638
+      },
+      {
+       "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+       "avg_score": 0.2490300904437018
+      },
+      {
+       "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+       "avg_score": 0.2411170238622883
+      },
+      {
+       "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+       "avg_score": 0.22222561036464614
+      }
+     ],
+     "effect_on_all_recs": [
+      {
+       "entity_id": "5ADB94A4-F04A-40CA-A82D-209417A8666A",
+       "avg_score": 0.2876272753293638
+      },
+      {
+       "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+       "avg_score": 0.2490300904437018
+      },
+      {
+       "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+       "avg_score": 0.2411170238622883
+      },
+      {
+       "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+       "avg_score": 0.22222561036464614
+      }
+     ]
+    }
+   }
+  }
+ }
+}

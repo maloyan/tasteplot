@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+.env
+.env.local
+*.log
+.DS_Store
+# Private notes. Never publish.
+notes/
+# Raw live Qloo responses can be large; commit only curated ones.
+fixtures/qloo/recorded/raw/
+
+# Private notes. Never publish.
+RULES_CHECK.md

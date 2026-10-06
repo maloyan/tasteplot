@@ -1,0 +1,299 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:entity:place",
+   "signal.interests.entities": "AFBD8046-4EAC-4C0B-8348-955B033A8573,CD5F4913-A6B1-421C-8958-42A281426BB5,99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+   "signal.interests.tags": "urn:tag:genre:media:literary_fiction,urn:tag:nearby_attraction:qloo:bookstores,urn:tag:resy:collection:place:natural_wine",
+   "filter.location": "POINT(-0.0752 51.5463)",
+   "filter.location.radius": "800",
+   "feature.explainability": "true",
+   "take": "6"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "entities": [
+    {
+     "name": "Harvest E8",
+     "tags": [
+      {
+       "id": "urn:tag:credit_card:place:american_express",
+       "name": "American express",
+       "type": "urn:tag:credit_card:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:service_options:place:delivery",
+       "name": "Delivery",
+       "type": "urn:tag:service_options:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:category:place:produce_market",
+       "name": "Produce market",
+       "type": "urn:tag:category:place",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 51.550126399999996,
+      "lon": -0.07492019999999999,
+      "geohash": "gcpvq23mnpz6"
+     },
+     "entity_id": "5ADB94A4-F04A-40CA-A82D-209417A8666A",
+     "popularity": 0.4734599481965944,
+     "properties": {
+      "address": "130-132 Kingsland High St London E8 2NS United Kingdom",
+      "geocode": {
+       "city": "London",
+       "name": "Hackney",
+       "metro": "London",
+       "country": "United Kingdom",
+       "country_code": "GB",
+       "admin1_region": "England",
+       "admin2_region": "Greater London"
+      },
+      "price_level": null,
+      "business_rating": 3.5999999046325684,
+      "short_description": "Cafe and health-food marketplace on Kingsland High Street offering organic produce, takeaway, delivery, and LGBTQ+ friendly community-focused service."
+     },
+     "disambiguation": "130-132 Kingsland High St London E8 2NS United Kingdom",
+     "query": {
+      "affinity": 0.8271260639613317,
+      "distance": 425.9165118973378,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+         "score": 0.3939649803261601
+        },
+        {
+         "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+         "score": 0.3088033518154336
+        },
+        {
+         "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+         "score": 0.2972316678584063
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Rio Cinema",
+     "tags": [
+      {
+       "id": "urn:tag:decor:qloo:vintage",
+       "name": "Vintage",
+       "type": "urn:tag:decor:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+       "name": "Wheelchair accessible restroom",
+       "type": "urn:tag:accessibility:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:setting:qloo:historic",
+       "name": "Historic",
+       "type": "urn:tag:setting:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 51.5496766,
+      "lon": -0.0755165,
+      "geohash": "gcpvq23487fv"
+     },
+     "entity_id": "3ECBD7CB-AF58-415C-BEE8-BF9945ACB80E",
+     "popularity": 0.9827617908837745,
+     "properties": {
+      "address": "107 Kingsland High St London E8 2PB United Kingdom",
+      "geocode": {
+       "city": "London",
+       "name": "Hackney",
+       "metro": "London",
+       "country": "United Kingdom",
+       "country_code": "GB",
+       "admin1_region": "England",
+       "admin2_region": "Greater London"
+      },
+      "price_level": null,
+      "business_rating": 4.5,
+      "short_description": "Art Deco East London cinema screening mainstream, arthouse, classic, and children’s films alongside live events, festivals, and community-focused programming."
+     },
+     "disambiguation": "107 Kingsland High St London E8 2PB United Kingdom",
+     "query": {
+      "affinity": 0.8256320084124691,
+      "distance": 376.0985986231727,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+         "score": 0.40134760203097414
+        },
+        {
+         "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+         "score": 0.31626868247570883
+        },
+        {
+         "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+         "score": 0.2823837154933171
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Dalston Eastern Curve Garden",
+     "tags": [
+      {
+       "id": "urn:tag:genre:place:restaurant:bar",
+       "name": "Bar",
+       "type": "urn:tag:genre:place",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:amenity:qloo:seating",
+       "name": "Seating",
+       "type": "urn:tag:amenity:qloo",
+       "weight": null
+      },
+      {
+       "id": "urn:tag:beverage_offering:qloo:beer",
+       "name": "Beer",
+       "type": "urn:tag:beverage_offering:qloo",
+       "weight": null
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:place",
+     "location": {
+      "lat": 51.5468122,
+      "lon": -0.0736168,
+      "geohash": "gcpvnrf3uwe6"
+     },
+     "entity_id": "81297B9F-F548-481B-A02A-61943F7F07BA",
+     "popularity": 0.9955674025603052,
+     "properties": {
+      "address": "13 Dalston Ln London E8 3DF United Kingdom",
+      "geocode": {
+       "city": "London",
+       "name": "Hackney",
+       "metro": "London",
+       "country": "United Kingdom",
+       "country_code": "GB",
+       "admin1_region": "England",
+       "admin2_region": "Greater London"
+      },
+      "price_level": null,
+      "business_rating": 4.800000190734863,
+      "short_description": "Community-run garden on a former railway line with a cafe-bar social enterprise, residents' food-growing beds and wildlife-friendly planting in Hackney."
+     },
+     "disambiguation": "13 Dalston Ln London E8 3DF United Kingdom",
+     "query": {
+      "affinity": 0.824854190579968,
+      "distance": 123.40667357296978,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+         "score": 0.40963128219585876
+        },
+        {
+         "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+         "score": 0.3082451351983232
+        },
+        {
+         "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+         "score": 0.28212358260581794
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "query": {
+   "explainability": {
+    "signal.interests.entities": {
+     "effect_on_top3_recs": [
+      {
+       "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+       "avg_score": 0.4016479548509977
+      },
+      {
+       "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+       "avg_score": 0.3111057231631552
+      },
+      {
+       "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+       "avg_score": 0.28724632198584715
+      }
+     ],
+     "effect_on_top5_recs": [
+      {
+       "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+       "avg_score": 0.3972883276297093
+      },
+      {
+       "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+       "avg_score": 0.31365186792818917
+      },
+      {
+       "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+       "avg_score": 0.2890598044421016
+      }
+     ],
+     "effect_on_top10_recs": [
+      {
+       "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+       "avg_score": 0.3966752217775387
+      },
+      {
+       "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+       "avg_score": 0.3146197422564896
+      },
+      {
+       "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+       "avg_score": 0.2887050359659717
+      }
+     ],
+     "effect_on_all_recs": [
+      {
+       "entity_id": "AFBD8046-4EAC-4C0B-8348-955B033A8573",
+       "avg_score": 0.3966752217775387
+      },
+      {
+       "entity_id": "CD5F4913-A6B1-421C-8958-42A281426BB5",
+       "avg_score": 0.3146197422564896
+      },
+      {
+       "entity_id": "99EE4D7C-2722-4903-86A5-1CB829A8D1EC",
+       "avg_score": 0.2887050359659717
+      }
+     ]
+    }
+   }
+  }
+ }
+}

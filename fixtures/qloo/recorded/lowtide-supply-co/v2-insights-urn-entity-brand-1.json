@@ -1,0 +1,271 @@
+{
+ "request": {
+  "path": "/v2/insights",
+  "params": {
+   "filter.type": "urn:entity:brand",
+   "signal.interests.entities": "92384FD1-363D-4423-926C-EAF478CE079B,7161ADA0-8DC8-471E-A4A8-61EE15578400,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C,C4DE95D6-2E89-4276-8B59-27230B19C62F",
+   "signal.interests.tags": "urn:tag:ambience:qloo:streetwear_culture_influence,urn:tag:genre:brand:fashion:footwear:sneakers,urn:tag:genre:media:skateboarding",
+   "signal.location": "POINT(-118.4695 33.985)",
+   "signal.location.radius": "1200",
+   "filter.exclude.entities": "92384FD1-363D-4423-926C-EAF478CE079B,7161ADA0-8DC8-471E-A4A8-61EE15578400,375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+   "feature.explainability": "true",
+   "take": "3"
+  }
+ },
+ "body": {
+  "success": true,
+  "results": {
+   "entities": [
+    {
+     "name": "Kith",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion:casual",
+       "name": "Casual",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:aesthetic_property:qloo:minimalist_branding",
+       "name": "Minimalist Branding",
+       "type": "urn:tag:aesthetic_property:qloo"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "F3DF06A0-49FA-439D-9D74-534EA2A0C5E9",
+     "popularity": 0.9907358749639775,
+     "properties": {
+      "short_description": "Kith is a lifestyle brand known for its performance-driven collections of outerwear, apparel, footwear, and accessories, with global retail presence."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9307106451593611,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+         "score": 0.27637170606493466
+        },
+        {
+         "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+         "score": 0.2740493812267264
+        },
+        {
+         "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+         "score": 0.25332562357266875
+        },
+        {
+         "entity_id": "C4DE95D6-2E89-4276-8B59-27230B19C62F",
+         "score": 0.19625328913567025
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Fear Of God",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion:footwear:sneaker:basketball",
+       "name": "Basketball",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion:footwear:sandals",
+       "name": "Sandals",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "73C9B585-08D4-4ECA-9500-3745F70C81F1",
+     "popularity": 0.9880829279042566,
+     "properties": {
+      "short_description": "Fear of God is a fashion brand known for its contemporary streetwear collections including Essentials, Athletics, and seasonal releases featuring tops, bottoms, knitwear, outerwear, denim, suiting, lounge, footwear, and accessories."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9298834982078488,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+         "score": 0.2791275834830901
+        },
+        {
+         "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+         "score": 0.2746120207215459
+        },
+        {
+         "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+         "score": 0.25057641456596175
+        },
+        {
+         "entity_id": "C4DE95D6-2E89-4276-8B59-27230B19C62F",
+         "score": 0.1956839812294022
+        }
+       ]
+      }
+     }
+    },
+    {
+     "name": "Anti Social Social Club",
+     "tags": [
+      {
+       "id": "urn:tag:genre:brand:fashion",
+       "name": "Fashion",
+       "type": "urn:tag:genre:brand"
+      },
+      {
+       "id": "urn:tag:aesthetic_property:qloo:minimalist_typography",
+       "name": "Minimalist Typography",
+       "type": "urn:tag:aesthetic_property:qloo"
+      },
+      {
+       "id": "urn:tag:aesthetic_property:qloo:wavy_text_effects",
+       "name": "Wavy Text Effects",
+       "type": "urn:tag:aesthetic_property:qloo"
+      }
+     ],
+     "type": "urn:entity",
+     "enabled": true,
+     "subtype": "urn:entity:brand",
+     "entity_id": "395E0A85-4655-4894-9D30-BC94946FB25E",
+     "popularity": 0.989956094997542,
+     "properties": {
+      "short_description": "Anti Social Social Club is a Los Angeles–based streetwear brand known for hoodies, t-shirts, and collaborations with pop culture icons."
+     },
+     "disambiguation": "",
+     "query": {
+      "affinity": 0.9291181165443232,
+      "measurements": {
+       "audience_growth": 0
+      },
+      "explainability": {
+       "signal.interests.entities": [
+        {
+         "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+         "score": 0.2839109306356741
+        },
+        {
+         "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+         "score": 0.2777431217852732
+        },
+        {
+         "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+         "score": 0.2552052953009099
+        },
+        {
+         "entity_id": "C4DE95D6-2E89-4276-8B59-27230B19C62F",
+         "score": 0.18314065227814275
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "query": {
+   "geospatial": {
+    "panel_size": {
+     "context": 54608356375,
+     "target": 754726994
+    }
+   },
+   "explainability": {
+    "signal.interests.entities": {
+     "effect_on_top3_recs": [
+      {
+       "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+       "avg_score": 0.2798034067278996
+      },
+      {
+       "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+       "avg_score": 0.2754681745778485
+      },
+      {
+       "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+       "avg_score": 0.25303577781318015
+      },
+      {
+       "entity_id": "C4DE95D6-2E89-4276-8B59-27230B19C62F",
+       "avg_score": 0.19169264088107174
+      }
+     ],
+     "effect_on_top5_recs": [
+      {
+       "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+       "avg_score": 0.2798034067278996
+      },
+      {
+       "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+       "avg_score": 0.2754681745778485
+      },
+      {
+       "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+       "avg_score": 0.25303577781318015
+      },
+      {
+       "entity_id": "C4DE95D6-2E89-4276-8B59-27230B19C62F",
+       "avg_score": 0.19169264088107174
+      }
+     ],
+     "effect_on_top10_recs": [
+      {
+       "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+       "avg_score": 0.2798034067278996
+      },
+      {
+       "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+       "avg_score": 0.2754681745778485
+      },
+      {
+       "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+       "avg_score": 0.25303577781318015
+      },
+      {
+       "entity_id": "C4DE95D6-2E89-4276-8B59-27230B19C62F",
+       "avg_score": 0.19169264088107174
+      }
+     ],
+     "effect_on_all_recs": [
+      {
+       "entity_id": "7161ADA0-8DC8-471E-A4A8-61EE15578400",
+       "avg_score": 0.2798034067278996
+      },
+      {
+       "entity_id": "92384FD1-363D-4423-926C-EAF478CE079B",
+       "avg_score": 0.2754681745778485
+      },
+      {
+       "entity_id": "375758AA-B0FA-4508-8EC1-D7FBFE3A4B3C",
+       "avg_score": 0.25303577781318015
+      },
+      {
+       "entity_id": "C4DE95D6-2E89-4276-8B59-27230B19C62F",
+       "avg_score": 0.19169264088107174
+      }
+     ]
+    }
+   }
+  }
+ }
+}
