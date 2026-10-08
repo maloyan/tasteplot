@@ -28,6 +28,8 @@ const hour = (now: Date) => now.toISOString().slice(0, 13);
 interface Stored {
   used: number;
   monthRemaining?: number;
+  /** True when the KV read failed. The quota then counts as used up (fail closed). */
+  unreadable?: boolean;
 }
 
 export class Quota {
@@ -42,7 +44,13 @@ export class Quota {
   }
 
   private async load(): Promise<Stored> {
-    const raw = await this.store.get(this.key());
+    let raw: string | null;
+    try {
+      raw = await this.store.get(this.key());
+    } catch (e) {
+      console.warn(`quota read failed, fresh plans paused: ${(e as Error).message}`);
+      return { used: this.cap, unreadable: true };
+    }
     if (!raw) return { used: 0 };
     try {
       const v = JSON.parse(raw) as Stored;
@@ -63,8 +71,15 @@ export class Quota {
   async add(calls: number, monthRemaining?: number): Promise<QuotaInfo> {
     if (calls > 0 || monthRemaining !== undefined) {
       const s = await this.load();
-      const next: Stored = { used: s.used + Math.max(0, calls), monthRemaining: monthRemaining ?? s.monthRemaining };
-      await this.store.put(this.key(), JSON.stringify(next), 60 * 60 * 24 * 3);
+      // Never write a counter built on a failed read: it would lock the day.
+      if (!s.unreadable) {
+        const next: Stored = { used: s.used + Math.max(0, calls), monthRemaining: monthRemaining ?? s.monthRemaining };
+        try {
+          await this.store.put(this.key(), JSON.stringify(next), 60 * 60 * 24 * 3);
+        } catch (e) {
+          console.warn(`quota write failed: ${(e as Error).message}`);
+        }
+      }
     }
     return this.read();
   }

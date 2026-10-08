@@ -2,7 +2,7 @@
 import { Hono } from "hono";
 import { streamSSE } from "hono/streaming";
 import { makeQlooClient, qlooMode, type QlooConfig } from "../qloo";
-import { kvStore, memoryStore, type KeyValueStore, type QlooRequest, type QlooResponse } from "../qloo/transport";
+import { kvStore, memoryStore, safeStore, sha256Hex, type KeyValueStore, type QlooRequest, type QlooResponse } from "../qloo/transport";
 import { createProvider, type LLMConfig } from "../llm";
 import { RecordingProvider, type Transcript } from "../llm/replay";
 import { runAgent, validateRequest } from "../agent/loop";
@@ -43,8 +43,19 @@ export interface AppHooks {
 const PLAN_TTL = 60 * 60 * 24 * 30;
 const memCache = memoryStore();
 
-function cacheFor(env: Env): KeyValueStore {
+/** Raw store. Only the quota reads it directly, so it can fail closed. */
+function storeFor(env: Env): KeyValueStore {
   return env.CACHE ? kvStore(env.CACHE) : memCache;
+}
+
+/** Cache store for plans, Qloo responses and rate limits. A KV error is a miss, never a failed plan. */
+function cacheFor(env: Env): KeyValueStore {
+  return safeStore(storeFor(env));
+}
+
+/** KV key for a finished plan or baseline. The request is hashed: KV keys stop at 512 bytes. */
+export async function resultKey(kind: "plan" | "baseline", mode: string, llmId: string, req: SiteRequest): Promise<string> {
+  return `${kind}:v5:${mode}:${await sha256Hex(`${llmId}\n${JSON.stringify(req)}`)}`;
 }
 
 export function readRequest(url: string): SiteRequest {
@@ -117,7 +128,7 @@ const clientIp = (h: (k: string) => string | undefined) => h("cf-connecting-ip")
 
 export function makeApp(hooks: AppHooks = {}) {
   const app = new Hono<{ Bindings: Env }>();
-  const quotaFor = (env: Env) => new Quota(cacheFor(env), envInt(env.DAILY_QLOO_CAP, DEFAULT_DAILY_CAP));
+  const quotaFor = (env: Env) => new Quota(storeFor(env), envInt(env.DAILY_QLOO_CAP, DEFAULT_DAILY_CAP));
   const perHour = (env: Env) => envInt(env.PLANS_PER_HOUR, DEFAULT_PLANS_PER_HOUR);
 
   app.get("/api/health", async (c) => {
@@ -170,7 +181,7 @@ export function makeApp(hooks: AppHooks = {}) {
       try { llm = createProvider(env); } catch (e) { send({ type: "error", message: (e as Error).message }); await chain; return; }
       const live = mode === "live" || !llm.dryRun;
       const store = cacheFor(env);
-      const planKey = `plan:v4:${mode}:${llm.id}:${JSON.stringify(req)}`;
+      const planKey = await resultKey("plan", mode, llm.id, req);
       const quota = quotaFor(env);
       const load = mode === "live" && llm.dryRun ? sampleLoader(env, hooks) : undefined;
 
@@ -259,7 +270,7 @@ export function makeApp(hooks: AppHooks = {}) {
       if (sample) return c.json(sample);
       // No LLM and no recorded answer: say so, at 0 Qloo calls, before any limit or quota.
       if (llm.dryRun && !baselineFixture(req.brand)?.completions[0]) return c.json(unavailableBaseline(req, llm.id));
-      const key = `baseline:v4:${mode}:${llm.id}:${JSON.stringify(req)}`;
+      const key = await resultKey("baseline", mode, llm.id, req);
       const hit = await store.get(key);
       if (hit) return c.json(JSON.parse(hit));
       const quota = quotaFor(env);

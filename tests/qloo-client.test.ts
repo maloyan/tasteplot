@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import { QlooBudgetError, QlooClient } from "../src/qloo/client";
 import { QlooParamError, checkInsightsParams } from "../src/qloo/params";
-import { budgetTransport, cachingTransport, httpTransport, memoryStore, QlooHttpError, requestKey, type Transport } from "../src/qloo/transport";
+import { budgetTransport, cacheKey, cachingTransport, httpTransport, KV_KEY_MAX_BYTES, memoryStore, QlooHttpError, requestKey, type KeyValueStore, type Transport } from "../src/qloo/transport";
 import { adaptHeatmap, adaptInsightsEntities, adaptSearch, adaptTags, adaptDemographics, adaptCompare, QlooShapeError } from "../src/qloo/types";
 import { makeQlooClient, qlooMode } from "../src/qloo";
 
@@ -54,6 +54,36 @@ describe("httpTransport", () => {
 describe("cache", () => {
   it("keys requests by sorted params and never by API key", () => {
     expect(requestKey({ path: "/a", params: { b: "2", a: "1" } })).toBe(requestKey({ path: "/a", params: { a: "1", b: "2" } }));
+  });
+  // Regression: a partner-brands request (many entity IDs plus a location) made a
+  // 603-byte key, and Workers KV answered "414 ... exceeds key length limit of 512".
+  it("keeps the KV key under 512 bytes for a param set over 600 bytes", async () => {
+    const ids = Array.from({ length: 16 }, (_, i) => `${"0123abcd".repeat(4)}-${i}`).join(",");
+    const req = { path: "/v2/insights", params: { "filter.type": "urn:entity:brand", "signal.interests.entities": ids, "signal.location": "POINT(-118.2437 34.0522)", "signal.location.radius": "1200", take: "8" } };
+    expect(new TextEncoder().encode(requestKey(req)).length).toBeGreaterThan(600);
+    const key = await cacheKey(req);
+    expect(new TextEncoder().encode(key).length).toBeLessThanOrEqual(KV_KEY_MAX_BYTES);
+    expect(key).toMatch(/^qloo:v2:v2_insights:[0-9a-f]{64}$/);
+  });
+  it("maps identical requests to the same key and different requests to different keys", async () => {
+    const a = await cacheKey({ path: "/v2/insights", params: { b: "2", a: "1" } });
+    expect(a).toBe(await cacheKey({ path: "/v2/insights", params: { a: "1", b: "2" } }));
+    expect(a).not.toBe(await cacheKey({ path: "/v2/insights", params: { a: "1", b: "3" } }));
+    expect(a).not.toBe(await cacheKey({ path: "/v2/tags", params: { a: "1", b: "2" } }));
+  });
+  it("falls through to the live call when the cache store fails", async () => {
+    const broken: KeyValueStore = {
+      get: async () => { throw new Error("KV GET failed: 414 UTF-8 encoded length of 603 exceeds key length limit of 512."); },
+      put: async () => { throw new Error("KV PUT failed: 429 Too Many Requests"); },
+    };
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    const inner = vi.fn<Transport>(async () => ({ status: 200, body: { results: { entities: [{ entity_id: "b1", name: "Brand" }] } } }));
+    const c = new QlooClient({ transport: cachingTransport(inner, broken), paramMode: "warn" });
+    const out = await c.insights("urn:entity:brand", { "signal.interests.entities": ["e1"] });
+    expect(out.map((e) => e.name)).toEqual(["Brand"]);
+    expect(inner).toHaveBeenCalledTimes(1);
+    expect(warn).toHaveBeenCalled();
+    warn.mockRestore();
   });
   it("serves the second identical request from cache", async () => {
     const inner = vi.fn<Transport>(async () => ({ status: 200, body: { results: [{ entity_id: "x", name: "X" }] } }));

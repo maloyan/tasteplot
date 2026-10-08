@@ -142,6 +142,57 @@ describe("server quota protection (live mode)", { timeout: 30_000 }, () => {
     expect(out[1]).toMatchObject({ type: "thought", text: "sample" });
   });
 
+  // Regression: Workers KV refuses keys over 512 bytes. The fake KV here refuses them
+  // the same way, so a long Qloo or plan key fails the test like it failed live.
+  it("runs a full plan with every KV key under 512 bytes", async () => {
+    stubQlooFetch();
+    const m = new Map<string, string>();
+    const check = (k: string) => { const n = new TextEncoder().encode(k).length; if (n > 512) throw new Error(`KV GET failed: 414 UTF-8 encoded length of ${n} exceeds key length limit of 512.`); };
+    const kv = { get: async (k: string) => (check(k), m.get(k) ?? null), put: async (k: string, v: string) => (check(k), void m.set(k, v)) } as unknown as KVNamespace;
+    const warn = vi.spyOn(console, "warn");
+    const out = parseSSE(await (await makeApp().request(`/api/plan?${Q}`, ip("6.6.6.6"), env(kv))).text());
+    const steps = out.filter((e): e is Extract<AgentEvent, { type: "step" }> => e.type === "step").map((e) => e.step);
+    expect(steps.some((s) => s.label.startsWith("Partner brands") && s.status === "done")).toBe(true);
+    expect(steps.some((s) => s.status === "error")).toBe(false);
+    expect(out.some((e) => e.type === "plan")).toBe(true);
+    expect(warn).not.toHaveBeenCalled();
+    expect([...m.keys()].some((k) => k.startsWith("qloo:v2:v2_insights:"))).toBe(true);
+    warn.mockRestore();
+  });
+
+  it("shows a sample, not an error, when every KV call fails (the quota fails closed)", async () => {
+    stubQlooFetch();
+    const kv = { get: async () => { throw new Error("KV GET failed: 503"); }, put: async () => { throw new Error("KV PUT failed: 429"); } } as unknown as KVNamespace;
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    // The quota cannot be read, so it fails closed: no fresh Qloo call, a recorded sample instead.
+    const files: Record<string, string> = {
+      "samples/index.json": JSON.stringify([{ id: "abc", brand: "Folio & Fern Books", metro: "lon", plan: true }]),
+      "samples/abc.json": JSON.stringify([{ type: "thought", text: "recorded" }]),
+    };
+    const out = parseSSE(await (await makeApp({ loadSample: async (p) => files[p] ?? null }).request(`/api/plan?${Q}`, ip("7.7.7.7"), env(kv))).text());
+    expect(upstream).toBe(0);
+    expect(out.find((e) => e.type === "quota")).toMatchObject({ source: "sample", quota: { exhausted: true } });
+    expect(out.some((e) => e.type === "error")).toBe(false);
+    warn.mockRestore();
+  });
+
+  it("finishes the plan when only the cache keys fail in KV", async () => {
+    stubQlooFetch();
+    const m = new Map<string, string>();
+    const quotaOnly = (k: string) => { if (!k.startsWith("quota:")) throw new Error("KV PUT failed: 429 Too Many Requests"); };
+    const kv = { get: async (k: string) => (quotaOnly(k), m.get(k) ?? null), put: async (k: string, v: string) => (quotaOnly(k), void m.set(k, v)) } as unknown as KVNamespace;
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    const out = parseSSE(await (await makeApp().request(`/api/plan?${Q}`, ip("8.8.8.8"), env(kv))).text());
+    const steps = out.filter((e): e is Extract<AgentEvent, { type: "step" }> => e.type === "step").map((e) => e.step);
+    expect(steps.some((s) => s.label.startsWith("Partner brands") && s.status === "done")).toBe(true);
+    expect(steps.some((s) => s.status === "error")).toBe(false);
+    expect(out.some((e) => e.type === "plan")).toBe(true);
+    const quotas = out.filter((e): e is Extract<AgentEvent, { type: "quota" }> => e.type === "quota");
+    expect(quotas.at(-1)!.quota.used).toBe(upstream);
+    expect(warn).toHaveBeenCalled();
+    warn.mockRestore();
+  });
+
   it("reports the quota in /api/health without exposing the key", async () => {
     const { kv } = fakeKV();
     const r = await makeApp().request("/api/health", {}, env(kv));

@@ -171,20 +171,56 @@ export function kvStore(kv: KVNamespace): KeyValueStore {
   };
 }
 
-/** Stable cache key. Params are sorted. The API key is never part of the key. */
+/**
+ * A cache must never break a plan. A failed get is a miss, a failed put is skipped.
+ * Both are logged. Why: Workers KV can refuse a call (a key over 512 bytes, the
+ * Workers Free limit of 1,000 writes a day), and a miss only costs one live call,
+ * which the call budget still limits.
+ */
+export function safeStore(store: KeyValueStore, log: (msg: string) => void = (m) => console.warn(m)): KeyValueStore {
+  return {
+    async get(k) {
+      try { return await store.get(k); } catch (e) { log(`cache get failed, treated as a miss (${k.slice(0, 40)}): ${(e as Error).message}`); return null; }
+    },
+    async put(k, v, ttl) {
+      try { await store.put(k, v, ttl); } catch (e) { log(`cache put failed, skipped (${k.slice(0, 40)}): ${(e as Error).message}`); }
+    },
+  };
+}
+
+/** Workers KV refuses keys over 512 bytes (UTF-8). */
+export const KV_KEY_MAX_BYTES = 512;
+
+/** Canonical form of a request: method, path, sorted params. The API key is never part of it. */
 export function requestKey(req: QlooRequest): string {
   const sorted = Object.keys(req.params).sort().map((k) => `${k}=${req.params[k]}`).join("&");
   return `qloo:v1:${req.path}?${sorted}`;
 }
 
+/** SHA-256 hex digest (Web Crypto: Workers and Node 20+). */
+export async function sha256Hex(s: string): Promise<string> {
+  const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return [...new Uint8Array(d)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+/**
+ * KV key for a Qloo request: a short readable prefix plus the SHA-256 of the
+ * canonical request. The length is fixed (under 100 bytes) whatever the params are.
+ */
+export async function cacheKey(req: QlooRequest): Promise<string> {
+  const endpoint = req.path.replace(/^\/+/, "").replace(/[^A-Za-z0-9]+/g, "_").slice(0, 32) || "root";
+  return `qloo:v2:${endpoint}:${await sha256Hex(`GET ${requestKey(req)}`)}`;
+}
+
 /** Cache 2xx responses. Responses with an empty result are cached too: they are real answers. */
 export function cachingTransport(inner: Transport, store: KeyValueStore, ttlSeconds = 60 * 60 * 24 * 7): Transport {
+  const safe = safeStore(store);
   return async (req) => {
-    const key = requestKey(req);
-    const hit = await store.get(key);
+    const key = await cacheKey(req);
+    const hit = await safe.get(key);
     if (hit) return { status: 200, body: JSON.parse(hit), cached: true };
     const res = await inner(req);
-    if (res.status >= 200 && res.status < 300) await store.put(key, JSON.stringify(res.body), ttlSeconds);
+    if (res.status >= 200 && res.status < 300) await safe.put(key, JSON.stringify(res.body), ttlSeconds);
     return res;
   };
 }
